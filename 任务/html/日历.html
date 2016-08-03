@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日历</title>
+	<link rel="stylesheet" type="text/css" href="../css/日历.css">
+</head>
+<body>
+	<div id="blog">
+		<div id="div1"><strong><center>1<br>JAN</center></strong></div>
+		<div id="div1"><strong><center>2<br>FER</center></strong></div>
+		<div id="div1"><strong><center>3<br>MAR</center></strong></div>
+		<div id="div1"><strong><center>4<br>APR</center></strong></div>
+		<div id="div1"><strong><center>5<br>MAY</center></strong></div>
+		<div id="div1"><strong><center>6<br>JUN</center></strong></div>
+		<div id="div1"><strong><center>7<br>JUL</center></strong></div>
+		<div id="div1"><strong><center>8<br>AUG</center></strong></div>
+		<div id="div1"><strong><center>9<br>SEP</center></strong></div>
+		<div id="div1"><strong><center>10<br>OCT</center></strong></div>
+		<div id="div1"><strong><center>11<br>NOV</center></strong></div>
+		<div id="div1"><strong><center>12<br>DEC</center></strong></div>
+		<div id="div2"><strong>6 </strong><label>月节日</label><p>端午节：6月4日至6日放假3天</p></div>
+	</div>
+
+	<script type="text/javascript">
+	
+			
+		var oArray=[
+					"元旦：1月1日至3日放假三天。",
+					"春节：2月2日至8日放假7天。",
+					"妇女节：3月8日妇女节，与我无关。",
+					"清明节：4月3日至5日放假3天",
+					"劳动节：4月30日至5月2日放假3天。",
+					"端午节：6月4日至6日放假3天。",
+					"小暑：7月7日小暑。不放假。",
+					"七夕节：8月6日七夕节。不放假。",
+					"中秋节：9月10日至12日放假3天。",
+					"国庆节：10月1日至7日放假7天。",
+					"立冬：11月8日立冬。不放假。",
+					"艾滋病日:12月1日废除奴隶制国际日:12月2日。"]
+						
+				var Div=document.getElementById("blog").getElementsByTagName("div");	
+				var Div2=document.getElementById("div2");
+				var P=document.getElementById("div2").getElementsByTagName("p")[0];
+				var year=document.getElementById("div2").getElementsByTagName("strong")[0];
+				
+				for(var i=0;i<Div.length-1;i++)
+				{
+					Div[i].index=i;
+					Div[i].onmouseover=function()
+					{
+						
+						for(var n=0;n<Div.length;n++)
+						{
+							Div[this.index].style.background="#F1EEEE";
+							Div[this.index].style.color="#F53939";
+						
+							P.innerHTML=oArray[this.index];
+							year.innerHTML=this.index+1;
+						}
+						
+					}
+					Div[i].onmouseout=function(){
+						for(var j=0;j<Div.length-1;j++){
+							Div[this.index].style.background="#161616";
+							Div[this.index].style.color=" #FFFFFF";
+						}
+					}
+
+				}
+
+				
+
+				
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,18 @@
+#blog{
+	margin: 10px auto;
+	width: 500px;
+	height: 700px;
+	text-align: center;
+}
+#div1{
+	width:300px;
+	height: 300px;
+	border: 1px solid #9F9E9E;
+	background: #C9F7F3;
+	margin:40px 105px;
+}
+#txt1,#txt2{
+	width:200px;
+	height:20px;
+	background-color: #FFBCBC;
+}

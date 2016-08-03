@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>求和</title>
+	<link rel="stylesheet" type="text/css" href="../css/求和.css">
+</head>
+<body>
+	
+	<div id="blog">
+		<input type="text" id="text1">
+		<input type="button" value="求和" onclick="sum()">
+		<p>输入数字求和，数字之间用半角","号分隔</p>
+		<strong><p1 class="summ"></p1></strong>
+	</div>
+	<script type="text/javascript">
+	/*4
+		第一种方法
+	function sum(){
+				var summ=0;
+				var P1=document.getElementsByTagName("p1")[0];
+				var obj2=document.getElementsByTagName("input")[0].value.split(",");
+				for(var i in obj2)
+				{
+						summ+=parseInt(obj2[i]);
+				}
+					//document.write(summ);
+					P1.innerHTML=summ;
+	}
+*/
+		//第二种方法
+	function sum(){
+		var summ=0;
+		var P1=document.getElementsByTagName("p1")[0];
+		var obj=document.getElementById("text1").value.split(",");
+		for(var i=0;i<obj.length;i++){
+			summ+=parseInt(obj[i]);
+		}
+		P1.innerHTML=summ;
+	}
+		
+
+	</script>
+</body>
+</html>

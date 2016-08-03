@@ -1,0 +1,11 @@
+#blog1{
+	margin:0 auto;
+	width: 300px;
+	height: 300px;
+	padding: 10px;
+	border: 15px solid #121010;
+	color:#F8F1F1;
+	background-color: #121010;
+}
+
+#blog1.hover{color:#D73434;background-color: #DFD6D6;border-color: #EC0B0B;}

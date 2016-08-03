@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>比较大小</title>
+	<link rel="stylesheet" type="text/css" href="../css/比较大小.css">
+</head>
+<body>
+	<div id="blog">
+		<input type="text" id="txt">&nbsp<strong>VS</strong>&nbsp<input type="text" id="txt">&nbsp&nbsp<input type="button" value="max= ->">&nbsp<strong></strong>
+	</div>
+	<script type="text/javascript">
+	window.onload=function(){
+	var number=document.getElementsByTagName("input");
+	var Value=document.getElementsByTagName("strong");
+	for(var n=0;n<number.length-1;n++)
+	{
+		number[n].onkeyup = function ()
+		{	
+			this.value = this.value.replace(/[^\d]/g,"");//将所有得数字换成空格
+		}	
+	}	
+	number[2].onclick=function()
+	{
+		for(var i=0;i<number.length-1;i++)
+		{
+			if(number[i].value=="")
+				{
+					alert("请输入");
+					break;
+				}
+				else{
+					var max=parseFloat(number[0].value)>parseFloat(number[1].value)?parseFloat(number[0].value):parseFloat(number[1].value);
+					Value[1].innerHTML=max;
+				}
+		}
+	}
+}
+	</script>
+</body>
+</html>

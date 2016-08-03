@@ -1,0 +1,37 @@
+#blog{
+	margin:10px auto;
+	width: 500px;
+	
+}
+#div1{
+	border: 1px solid #000;
+	background: #000;
+	width: 458px;
+	height: 40px;
+	margin-left: -20px;
+	
+}
+#div1 li{
+	float: left;
+	color: #605F5F;
+	cursor: pointer;
+	line-height: 35px;
+	list-style-type:none;
+	padding:0px 20px;
+}
+#div1 li.tip{background:#FFFFFF;margin:0;}
+}
+#text1{
+	color: #1E1D1D;
+	display:block；
+}
+#text2,#text3{
+	display: none;
+}
+#div2{
+	border: 1px solid #000;
+	width: 498px;
+	height: auto;
+	margin-left: -20px;
+	margin-top: -16px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>提示框效果</title>
+	<link rel="stylesheet" type="text/css" href="../css/提示框效果.css">
+</head>
+<body>
+	<div id="blog">
+	<p>名车车标展示-鼠标移过显示车标</p>
+		<ul>
+			<li><a href="">这是一个漫画</a>
+				<span id="img1">
+					<img src="../图片/QQ图片20160727201606.jpg" />
+				</span>
+			</li>
+			<li><a href="">这是一个漫画</a>
+				<span id="img1">
+					<img src="../图片/QQ图片20160727201606.jpg" />
+				</span>
+			</li>
+			<li><a href="">这是一个漫画</a>
+				<span id="img1">
+					<img src="../图片/QQ图片20160727201606.jpg" />
+				</span>
+			</li>
+			<li><a href="">这是一个漫画</a>
+				<span id="img1">
+					<img src="../图片/QQ图片20160727201606.jpg" />
+				</span>
+			</li>
+			<li><a href="">这是一个漫画</a>
+				<span id="img1">
+					<img src="../图片/QQ图片20160727201606.jpg" />
+				</span>
+			</li>
+			<li><a href="">这是一个漫画</a>
+				<span id="img1">
+					<img src="../图片/QQ图片20160727201606.jpg" />
+				</span>
+			</li>
+			<li><a href="">这是一个漫画</a>
+				<span id="img1">
+					<img src="../图片/QQ图片20160727201606.jpg" />
+				</span>
+			</li>
+			<li><a href="">这是一个漫画</a>
+				<span id="img1">
+					<img src="../图片/QQ图片20160727201606.jpg" />
+				</span>
+			</li>
+			
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+	
+			var Li=document.getElementsByTagName("li");
+			var Img=document.getElementsByTagName("span");
+			var I=document.getElementsByTagName("img");
+			for(var i=0;i<Li.length;i++)
+			{	
+				Li[i].index=i;
+					
+				Li[i].onmouseover=function()
+				{
+					Img[this.index].style.display="block"
+					
+						I[this.index].style.display="block"
+				}
+				Li[i].onmouseout=function()
+				{
+						Img[this.index].style.display="none"
+				
+						I[this.index].style.display="none"
+				}
+			}
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>innerHTML属性</title>
+	<link rel="stylesheet" type="text/css" href="../css/innerHTML属性.css">
+</head>
+<body>
+	<div id="blog">
+		<div id="div1" onclick="set.show1()">
+			<p>innerHTML自带了语法检查功能,<strong>他会自动把不完整的HTML代码补充完整.运行如下的一个测试代码就可以发现了.
+document.getElementById("AlbumList").innerHTML</strong>
+alert(document.getElementById("AlbumList").innerHTML);
+他会自动把我的代码里面添加了和等标记.神奇!!! 111</p>
+		</div>
+		<div id="div2" onclick="set.show2()">
+			<p>innerHTML自带了语法检查功能,<strong>他会自动把不完整的HTML代码补充完整.</strong>运行如下的一个测试代码就可以发现了.
+document.getElementById("AlbumList").innerHTML
+alert(document.getElementById("AlbumList").innerHTML);
+他会自动把我的代码里面添加了和等标记.神奇!!!222</p>
+		</div>
+		<div id="div3" onclick="set.show3()">
+			<p>innerHTML自带了语法检查功能,<strong>他会自动把不完整的HTML代码补充完整.运行如下的一个测试代码就可以发现了.
+document.getElementById("AlbumList").innerHTML
+alert(document.getElementById("AlbumList").innerHTML);</strong>
+他会自动把我的代码里面添加了和等标记.神奇!!!333</p>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		/*var change=document.getElementById("blog").document.getElementsByTagName("div1");
+			var set={
+				show1:function(){
+					alert(change[0].innerHTML);
+				}
+			}*/
+		var change1=document.getElementById("div1");
+		var change2=document.getElementById("div2");
+		var change3=document.getElementById("div3");
+		var set={
+			show1:function(){
+				alert(change1.innerHTML);
+			},
+			show2:function(){
+				alert(change2.innerHTML)
+			},
+			show3:function(){
+				alert(change3.innerHTML)
+			}
+		}
+	</script>
+	
+</body>
+</html>

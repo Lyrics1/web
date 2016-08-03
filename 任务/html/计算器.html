@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算器</title>
+	<link rel="stylesheet" type="text/css" href="../css/计算器.css">
+</head>
+<body>
+	<div id="blog">
+		<div id="show">
+			<div id="show1"><strong></strong></div>
+			<div id="sum"><strong></strong></div>
+		</div>
+		<li id="equal1">C</li>
+		<li id="equal1">%</li>
+		<li id="equal1">÷</li>
+		<li id="equal1">x</li>
+		<li id="equal4"><a href="javascript::">7</a></li>
+		<li id="equal4"><a href="javascript::">8</a></li>
+		<li id="equal4"><a href="javascript::">9</a></li>
+		<li id="equal1">-</li>
+		<li id="equal4"><a href="javascript::">4</a></li>
+		<li id="equal4"><a href="javascript::">5</a></li>
+		<li id="equal4"><a href="javascript::">6</a></li>
+		<li id="equal1">+</li>
+		<li id="equal4"><a href="javascript::">1</a></li>
+		<li id="equal4"><a href="javascript::">2</a></li>
+		<li id="equal4"><a href="javascript::">3</a></li>
+		<li id="equal">=</li>
+		<li id="equal2">0</li>
+		<li id="equal3">.</li>
+	</div>
+	
+	<script type="text/javascript">
+		var Show=document.getElementsByTagName("strong");
+		var an=document.getElementsByTagName("li");
+		var number=document.getElementsByTagName("a");
+	
+		for(var i=0;i<an.length;i++)
+		{		an[i].index=i;
+				an[i].onclick=function()
+					{
+						/*if((this.index>=0&&this.index<4)||(this.index>14&&this.index<=18)||this.index==7||this.index==11)
+						{	
+							if(this.innerHTML=='C')
+									{
+										Show[0].innerHTML="";
+										Show[1].innerHTML=0;
+									}
+										switch(this.innerHTML)
+										{	
+											case this.innerHTML:Show[0].innerHTML=this.innerHTML;
+										}
+						}
+						else
+						{	
+								switch(this.index)
+								{
+									case 4:Show[0].innerHTML=7;break;
+									case 5:Show[0].innerHTML=8;break;
+									case 6:Show[0].innerHTML=9;break;
+									case 8:Show[0].innerHTML=4;break;
+									case 9:Show[0].innerHTML=5;break;
+									case 10:Show[0].innerHTML=6;break;
+									case 12:Show[0].innerHTML=1;break;
+									case 13:Show[0].innerHTML=2;break;
+									case 14:Show[0].innerHTML=3;break;
+									
+								}
+						}*/
+					}
+
+		}
+
+	</script>
+</body>
+</html>

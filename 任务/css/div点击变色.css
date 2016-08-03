@@ -1,0 +1,14 @@
+#blog{
+	width: 574px;
+	height: 300px;
+	margin:10px auto;
+}
+#blog div{
+	width: 150px;
+	height:150px;
+	float: left;
+	border: 0px solid #99F7FA;
+	background-color: #0F0D0D;
+	margin:20px;
+	float: left;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标属性改变路径</title>
+	<link rel="stylesheet" type="text/css" href="../css/鼠标属性改变路径.css">
+</head>
+<body>
+	<div id="blog">
+		<ul>
+			<li><img src="../图片/QQ图片20160727201606.jpg" width="200px" height="200px"></li>
+			
+			<li><img src="../图片/QQ图片20160727201537.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202211.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202217.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202222.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202226.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202244.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202241.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202237.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202247.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202230.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202819.jpg" id="img1"></li>
+			<li><img src="../图片/QQ图片20160728202808.jpg" id="img1"></li>
+		</ul>
+		
+	</div>
+
+	<script type="text/javascript">
+			var tip=document.getElementById("blog");
+			var Img=document.getElementsByTagName("img");
+			for(var i=0;i<Img.length;i++)
+			{
+				Img[i].index=i;
+				Img[i].onmouseover=function(){
+					
+						Img[0].src=Img[this.index].src
+				}
+
+
+			}
+			/*tip.onmouseover=function(){
+				Img[0].src="../图片/QQ图片20160727201537.jpg";
+			}*/
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自加</title>
+	<style type="text/css">
+	body{
+		text-align: center;
+		font-size: 50px;
+		font-weight: 800;
+	}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		window.onload=function(){
+			var change=document.body;
+			//var change=document.getElementsByTagName("body"); body元素不用通过document.getElementsByTagName()方法获得，直接通过document.body属性使用就行了
+			var i=0;
+			function show(){
+				change.innerHTML=++i;
+			}
+			setInterval(show,1000)
+			
+		}
+
+	</script>
+	<!--<button onclick="int=window.clearInterval(int)">Stop interval</button>-->
+</body>
+</html>

@@ -1,0 +1,81 @@
+.body{
+	font-size: 14px;
+	color:#464444;
+}
+*{
+	margin:0px;
+	padding: 0px;
+}
+.ui,li{list-style: none;}
+#change{
+	position: relative;
+	top:50px;
+	left: 50px;
+	width:250px;
+	height: 35px;
+	background-color: #CBCACA;
+	padding:20px 15px 15px 15px;
+	float: left;
+
+}
+.blog{
+	position: relative;
+	top: -10px;
+	left: 105px;
+}
+#blog1{
+	left: 100px;
+	width:13px;
+	height:13px;
+	background-color: #4BF6CB;
+	margin-left: 2px;
+	cursor: pointer;
+	float: left;
+}
+#blog2{
+	width:13px;
+	height: 13px;
+	background-color:#04439F;
+	margin-left: 2px;
+	cursor: pointer;
+	float: left;
+}
+#blog3{
+	width:13px;
+	height: 13px;
+	background-color: #F022CD;
+	margin-left: 2px;
+	cursor: pointer;
+	float: left;
+}
+#blog4{
+	position: relative;
+	top:140px;
+	margin-left: 50px;
+	width: 900px;
+	height:400px;
+	border:2px solid #4BF6CB;
+
+}
+#p1{position: relative;top:10px;left: -190px;}
+#blog5{
+	position: relative;
+	top:-260px;
+	left: 1000px;
+	width: 150px;
+	height: 20px;
+	border:2px solid #4BF6CB;
+}
+#blog6{
+	position: relative;
+	top:150px;
+	left: 50px;
+	width:1000px;
+	height:50px;
+	background-color: #4BF6CB;
+	border:2px solid #4BF6CB; 
+}
+#blog6 .b6{
+	border: 2px solid #0B0B0B;
+	background-color: #0B0B0B;
+}

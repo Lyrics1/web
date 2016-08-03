@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数传参，改变div</title>
+	<link rel="stylesheet" type="text/css" href="../css/函数传参，改变div.css">
+</head>
+<body>
+	<div id="blog">
+		<p>属性名 ：<input type="text" id="txt1" /></p>
+		<p>属性值 ：<input type="text" id="txt2" /></p>
+		<input type="button" value="确定" onclick="change()">
+		<input type="button" value="重置" onclick="former()"/>  
+		<div id="div1"></div>
+	</div>
+	<script type="text/javascript">
+		function change(){
+			var Name=document.getElementById("txt1").value;
+			var Value=document.getElementById("txt2").value; //函数名不能用关键词
+			var Div=document.getElementById("div1");
+			Div.style[Name]=Value;
+		};
+		function former(){
+			var Div=document.getElementById("div1");
+			Div.removeAttribute("style");
+
+		}
+
+		
+
+	</script>
+</body>
+</html>

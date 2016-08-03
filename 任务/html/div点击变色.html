@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>div点击变色</title>
+	<link rel="stylesheet" type="text/css" href="../css/div点击变色.css">
+	<!--<script type="text/javascript" src="../javascript/div点击变色"></script>-->
+</head>
+<body>
+	<div id="blog">
+		<center><input type="button" value="div点击变色" onclick="b()" /></center><br>
+		
+		<center><input type="button" value="重置" onclick="reveal()"></center>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<script type="text/javascript">
+	function b(){
+		var name=document.getElementById("blog").getElementsByTagName("div");
+			for(var i=0;i<name.length;i++){
+			name[i].style.background="#EC1515";
+		}
+	}
+	function reveal(){
+		var name=document.getElementById("blog").getElementsByTagName("div");
+		for(var i=0;i<name.length;i++){
+		name[i].removeAttribute("style");
+	}}
+	</script>
+</body>
+</html>

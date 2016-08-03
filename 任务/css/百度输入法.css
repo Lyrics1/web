@@ -1,0 +1,29 @@
+#blog1{
+	margin:10px auto;
+	width:200px;
+}
+ul{list-style: none;}
+#choice{
+	width: 60px;
+	height: 75px;
+	border: 1px solid #B9ADAD;
+	display: none;
+	margin-top: 10px;
+}
+#choice li{
+	display: inline-block;
+	line-height: 24px;
+	
+}
+a{
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: #1814F0;
+	margin:6px 16px;
+}
+#choice li:hover{
+	background:#91F9EB ;
+}
+#close{border-top: 1px solid;
+width:60px;}

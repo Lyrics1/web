@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3.求和</title>
+	<link rel="stylesheet" type="text/css" href="../css/3.求和.css">
+</head>
+<body>
+	<div id="blog">
+		<input type="text" id="tex">&nbsp+&nbsp<input type="text" id="tex">&nbsp = &nbsp<strong>?</strong>&nbsp<input type="button" value="求和">
+	</div>
+
+	<script type="text/javascript">
+		var Input=document.getElementsByTagName("input");
+		var Sum=document.getElementsByTagName("strong")[0];
+		
+			Input[2].onclick=function()
+			{
+				
+						for(var i=0;i<Input.length-1;i++)
+					{
+						if(Input[i].value=="")
+						{	
+							alert("请输入")	
+							break;
+						}
+						else{
+							var sum=0;
+							for(var n=0;n<Input.length-1;n++){
+								sum+=parseInt(Input[n].value)
+							}
+							Sum.innerHTML=sum;
+							break;
+							
+						}
+
+
+					}
+			}
+	</script>
+	
+</body>
+</html>

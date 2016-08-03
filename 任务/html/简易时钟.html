@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简易时钟</title>
+	<link rel="stylesheet" type="text/css" href="../css/简易时钟.css">
+</head>
+<body>
+	<div id="blog">
+
+	<span></span>点<span></span>分<span></span>秒
+
+	</div>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var Blog=document.getElementById("blog");
+			var Span=Blog.getElementsByTagName("span");
+
+			setInterval(getTimes,1000);
+
+			function getTimes()
+			{
+				var oDate=new Date(); //首先声明成一个Date（）类型，才可以使用getHours()。。。。等
+				var aDate=[oDate.getHours(),oDate.getMinutes(),oDate.getSeconds()];
+				for(var i in aDate)
+					Span[i].innerHTML=aDate[i];
+			}
+		}
+	</script>
+	
+</body>
+</html>

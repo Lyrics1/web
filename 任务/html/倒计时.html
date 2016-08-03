@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>倒计时</title>
+	<link rel="stylesheet" type="text/css" href="../css/倒计时.css">
+</head>
+<body>
+
+	<div id="blog">
+		<span>10</span>分<span>30</span>秒<br>
+		<input type="button" value="启动" id="butt" />
+	</div>
+
+	<script type="text/javascript">
+			window.onload=function()
+			{
+				var Blog=document.getElementById("blog");
+				var Span=document.getElementsByTagName("span");
+				var Button=Blog.getElementsByTagName("input")[0];
+				var Time=parseFloat(Span[0].innerHTML)*60+parseFloat(Span[1].innerHTML);
+				alert(Button.value)
+				
+					Button.onclick=function()
+					{		
+						if(Button.value=='启动')
+						{		Button.value=Button.value?'停止':'启动';
+								setInterval(jishi,1000);
+						}
+						
+					}
+					function jishi()
+					{
+								if(Time<0||Button.value=='启动')
+									return;
+								
+								Span[0].innerHTML=parseInt(Time/60);
+								var Second=Time%60;
+								Span[1].innerHTML=Second;
+								Time--;
+
+					}
+			}
+	
+	</script>
+</body>
+</html>

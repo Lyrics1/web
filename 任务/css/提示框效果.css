@@ -1,0 +1,37 @@
+#blog{
+	margin-left: 400px;
+	border:2px solid #525151;
+	width: 520px;
+	height: 400px;
+	text-align: center;
+}
+#blog ul{
+	list-style: none;
+	float: left;
+}
+#blog ul li{
+	float: left;
+	margin:10px;
+	width: 90px;
+	height: 90px;
+	border: 1px solid #7C6D6D;
+	background:#E3E0E0;
+	cursor: crosshair;
+}
+#img1{
+	border: 1px solid #898686;
+	width: 120px;
+	height: 120px;
+	display:none;
+	margin-top: -52px;
+	margin-left: -15px;
+}
+img{
+	width:120px;
+	height: 120px; 
+	display: none;
+}
+a{
+	text-decoration: none;
+	color: #B9B7B7;
+}

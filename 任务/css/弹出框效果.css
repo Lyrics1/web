@@ -1,0 +1,27 @@
+#blog{
+	margin:10px auto;
+	width: 600px;
+	height: 700px;
+	
+}
+#div1{
+	border: 5px solid #ECFB22;
+	width: 300px;
+	height: 189px;
+	display: none;
+	margin:180px;
+}
+#div2{
+	width: 290px;
+	height: 30px;
+	background-color: #25F6D2;
+	border: 5px solid #25F6D2;
+
+}
+#X{
+	border: 4px solid #F8CE5E;
+	margin-left: 272px;
+	color:#212020;
+	background-color: #FFFFFF;
+	cursor: pointer;
+}

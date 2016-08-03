@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>复选框</title>
+	<link rel="stylesheet" type="text/css" href="../css/复选框.css">
+</head>
+<body>
+	<div id="blog">
+		<label>&nbsp&nbsp<input type="checkbox"/ ><strong>全选</strong>&nbsp</label><span id="an">反选</span><hr/>
+		
+			<label>&nbsp&nbsp<input type="checkbox"/> &nbsp选项一</label><br/>
+			<label>&nbsp&nbsp<input type="checkbox"/> &nbsp选项二</label><br/>
+			<label>&nbsp&nbsp<input type="checkbox"/> &nbsp选项三</label><br/>
+			<label>&nbsp&nbsp<input type="checkbox"/> &nbsp选项四</label><br/>
+			<label>&nbsp&nbsp<input type="checkbox"/> &nbsp选项五</label><br/>
+			<label>&nbsp&nbsp<input type="checkbox"/> &nbsp选项六</label><br/>
+			<label>&nbsp&nbsp<input type="checkbox"/> &nbsp选项七</label><br/>
+			<label>&nbsp&nbsp<input type="checkbox"/> &nbsp选项八</label><br/>
+
+		</span>
+	</div>
+
+	<script type="text/javascript">
+
+			var all=document.getElementsByTagName("label");
+			var al=document.getElementsByTagName("input");
+			var not=document.getElementById("an");
+
+			var Type=document.getElementsByTagName("strong")[0];
+
+			for(var i=0;i<all.length;i++)
+			{
+				al[0].onclick=function()
+				{
+					for(var n=0;n<al.length;n++)
+					{
+						al[n].checked=this.checked;
+						Type.innerHTML=al[0].checked?"全不选":"全选"
+					}
+				}
+				not.onclick=function(){
+
+					for(var j=0;j<all.length;j++)
+					{	
+							al[j].checked=!al[j].checked;
+					}
+
+				}
+
+			}
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>记住密码提示框</title>
+	<link rel="stylesheet" type="text/css" href="../css/记住密码提示框.css">
+</head>
+<body>
+<center><label><input type="checkbox"/>希望记住密码吗？</label></center>
+<div id="blog1">为了您的信息安全，请不要在网吧或公用电脑上使用此功能！</div>
+<script type="text/javascript">
+	
+	
+	
+	var tips=document.getElementById("blog1");
+	var mo=document.getElementsByTagName("label")[0];
+	mo.onmouseover = function(){	
+		tips.className = "hover";
+	};
+	mo.onmouseout= function(){
+		
+		tips.className = "";
+	};
+
+	/*var oTips = document.getElementById("blog1");
+	var oLabel = document.getElementsByTagName("label")[0];	
+	oLabel.onmouseover = function ()
+	{
+		oTips.style.display = "block"
+	};
+	oLabel.onmouseout = function ()
+	{
+		oTips.style.display = "none"	
+	}*/
+</script>
+	
+</body>
+</html>

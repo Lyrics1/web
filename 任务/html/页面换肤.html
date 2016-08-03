@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页换肤</title>
+	<link rel="stylesheet" type="text/css" href="../css/页面换肤.css">
+	<!--<script type="text/javascript" src="javascript/页面换肤.js"></script>-->
+
+</head>
+<body>
+	<div id="change">
+		<p>选择页面颜色</p>
+		<span class="blog">
+			<!--<ul>
+				<li><span id="blog1"  onclick="set.changec1()"></span></li>
+				<li><span id="blog2"  onclick="set.changec2()"></span></li>
+				<li><span id="blog3"  onclick="set.changec3()"></span></li>
+			</ul>-->
+			<input type="button" id="blog1" onclick="set.changec1()"/>
+			<input type="button" id="blog2" onclick="set.changec2()"/>
+			<input type="button" id="blog3" onclick="set.changec3()"/>
+		</span>
+	</div>
+	<div id="blog4">
+		<span id="p1">
+		<p><strong>换肤测试</strong></p>
+		</span>
+	</div>
+	<div id="blog5"></div>
+	<div id="blog6"></div>
+	<script type="text/javascript">
+		
+		var dblog1=document.getElementById("blog4");
+		var dblog2=document.getElementById("blog5");
+		var dblog3=document.getElementById("blog6");
+
+
+		var set={
+			changec1:function(){
+				dblog1.style.border="2px solid #4BF6CB";
+				dblog2.style.border="2px solid #4BF6CB";
+				dblog3.style.background="#4BF6CB";
+				dblog3.style.border="2px solid #4BF6CB";
+			},
+			changec2:function(){
+				dblog1.style.border="2px solid #04439F";
+				dblog2.style.border="2px solid #04439F";
+				dblog3.style.background="#04439F";
+				dblog3.style.border="2px solid #04439F";
+			},
+			changec3:function(){
+				dblog1.style.border="2px solid #F022CD";
+				dblog2.style.border="2px solid #F022CD";
+				dblog3.style.background="#F022CD";	
+				dblog3.style.border="2px solid #F022CD";
+			}
+	
+	/*$(function(){
+		$("#blog4").click(function()){
+			$(this).toggleClass("b6");
+		});
+	}wrong*/
+}
+	</script>
+
+</body>
+</html>

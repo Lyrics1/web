@@ -1,0 +1,17 @@
+#blog{
+	margin: 10px auto;
+	width: 350px;
+	height: 50px;
+	background: #645C5C;
+	color: #070303;
+	padding: 50px 20px;
+}
+span{
+	width: 80px;
+	height: 30px;
+	margin-left: 20px;
+	border: 1px solid #C9C2C2;
+
+	background:#fff;
+
+}

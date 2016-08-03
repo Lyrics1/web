@@ -1,0 +1,35 @@
+#blog{
+	width: 340px;
+	height:auto;
+	border: 1px solid;
+	margin:10px 400px;
+	padding: 15px;
+	float: left;
+	background: #D4CDCD;
+	
+}
+#div1 {
+	width:60px;
+	height: 60px;
+	border: 1px solid #151414;
+	background: #161616;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 24px;
+	float: left;
+	margin-left:15px;
+	margin-bottom: 15px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+#div2{
+	width:290px;
+	height:auto;
+	border: 1px solid #E61B1B;
+	background: #E9E3E3;
+	margin:240px 17px 30px 15px ;
+	line-height: 20px;
+	padding: 5px;
+	
+
+}

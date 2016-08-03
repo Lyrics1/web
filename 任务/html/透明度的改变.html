@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>透明度的改变</title>
+	<link rel="stylesheet" type="text/css" href="../css/透明度的改变.css">
+</head>
+<body>
+	<div id="blog1">
+		<img src="../图片/QQ图片20160727201537.jpg" id="img1">
+		<img src="../图片/QQ图片20160727201537.jpg" id="img1">
+		<img src="../图片/QQ图片20160727201537.jpg" id="img1">
+		<img src="../图片/QQ图片20160727201537.jpg" id="img1">
+		<img src="../图片/QQ图片20160727201537.jpg" id="img1">
+		<img src="../图片/QQ图片20160727201537.jpg" id="img1">
+		<img src="../图片/QQ图片20160727201537.jpg" id="img1">
+		<img src="../图片/QQ图片20160727201537.jpg" id="img1">
+	</div>
+	<script type="text/javascript">
+		var j=document.getElementsByTagName("img");
+		alert(j.length);
+			for(var i=0;i<j.length;i++)
+			{
+				j[i].onmouseover=function()
+				{
+					this.className="tip";
+				};
+				j[i].onmouseout=function()
+				{
+					this.className="";
+				}
+
+			}
+	</script>
+</body>
+</html>

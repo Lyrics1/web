@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>按钮显示隐藏</title>
+	<link rel="stylesheet" type="text/css" href="../css/按钮显示隐藏.css">
+
+</head>
+<body>
+	<div id="blog">
+		<div id="div1">播放列表
+			<div id="sanjiao" onclick="show()"></div>
+		</div>
+		<div id="div2">
+			<p><a href="http://y.qq.com/#type=song&mid=001j7B3Z4Ixe9X&tpl=yqq_song_detail&play=1">奇妙能力歌</a></p>
+			<p><a href="">修炼爱情</a></p>
+			<p><a href="">inspire</a></p>
+			<p><a href="">Take you</a></p>
+
+		</div>
+	</div>
+
+	<script type="text/javascript">
+			function show(){
+
+				var P=document.getElementById("div2");
+
+				P.style.display=P.style.display=="none"?"block":"none"
+				if(P.style.display=="block")
+				{
+					var K=document.getElementById("sanjiao");
+						k.className="hove";
+				
+				}
+				
+			}
+	</script>
+</body>
+</html>

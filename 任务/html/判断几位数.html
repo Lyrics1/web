@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>判断几位数</title>
+	<link rel="stylesheet" type="text/css" href="../css/判断几位数.css">
+</head>
+<body>
+<div id="blog">
+	<input type="text" id="txt"> 
+	<input type="button" value="获取位数">
+</div>
+
+<script type="text/javascript">
+		var number=document.getElementsByTagName("input");
+		number[0].onkeyup=function()
+		{
+			this.value=this.value.replace(/[^\d]/g,"");	
+		}
+		number[1].onclick=function()
+			{
+				if(number[0].value==""){
+					alert("请输入")
+				}
+				else{
+					if(number[0].value.toString().length!=2){
+						alert("这是"+number[0].value.toString().length+"位数")
+					}
+					else {
+						alert("√是两位数")
+					}
+						//alert(/^\d{2}$/.test(parseInt(aInput[0].value)) ? "√ 是两位数" : "这是" + aInput[0].value.length + "位数")
+				}
+			}
+
+
+</script>
+</body>
+</html>

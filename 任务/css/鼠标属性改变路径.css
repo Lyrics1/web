@@ -1,0 +1,24 @@
+body{
+	background: #151313;
+}
+
+#blog{
+	margin: 10px 400px;
+	border: 1px solid #FFFFFF;
+	width: 500px;
+	height: 500px;
+	background: #FFFFFF;
+}
+#blog ul{
+	list-style: none;
+	float: left;
+}
+#blog ul li{
+	float: left;
+
+}
+#img1{
+	width: 80px;
+	height:80px;
+	margin: 15px;
+}

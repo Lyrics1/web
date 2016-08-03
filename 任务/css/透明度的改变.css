@@ -1,0 +1,18 @@
+#blog1{
+	width: 860px;
+	height: 430px;
+	border:1px solid #212121;
+	margin-left: 200px;
+	float: left;
+}
+#img1{
+	width: 200px;
+	height: 200px;
+	border: 1px solid ;
+	padding: 3px;
+	cursor: crosshair;
+	opacity: 0.7;
+}
+#img1.tip{
+	opacity: 1;
+}

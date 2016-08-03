@@ -1,0 +1,24 @@
+#blog{
+	margin: 10px auto;
+	width: 200px;
+	height: 50px;
+	background: #645C5C;
+	color: #070303;
+	padding: 50px 20px;
+}
+span{
+	width: 80px;
+	height: 30px;
+	margin-left: 35px;
+	border: 5px solid #C9C2C2;
+	background:#fff;
+
+}
+#butt{
+	width:150px;
+	height: 40px;
+	border-radius: 5px;
+	margin: 10px 20px;
+	background: #068409;
+	box-shadow: 5px 5px 5px;
+}

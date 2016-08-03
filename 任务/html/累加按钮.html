@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>累加按钮</title>
+	<link rel="stylesheet" type="text/css" href="../css/累加按钮.css">
+</head>
+<body>
+
+	<div id="blog">
+		<input type="button" value="1">
+	</div>
+	<script type="text/javascript">
+	
+		var n=document.getElementsByTagName("input")[0];
+		n.onclick=function(){
+			n.value=parseInt(n.value)+parseInt(1);
+			alert(n.value)
+		}
+	</script>
+</body>
+</html>

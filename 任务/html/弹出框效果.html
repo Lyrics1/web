@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹出层效果</title>
+	<link rel="stylesheet" type="text/css" href="../css/弹出框效果.css">
+</head>
+<body>
+	<div id="blog">
+		<center><button>弹出框</button></center>
+		<div id="div1">
+			<div id="div2">
+				<span id="X" >X</span>
+			</div>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+	var tip=document.getElementsByTagName("button")[0];
+	tip.onclick=function(){
+		var Div1=document.getElementById("div1");
+		Div1.style.display="block";
+	}
+	var close=document.getElementById("X");
+	close.onclick=function(){
+		var Div1=document.getElementById("div1");
+		Div1.style.display="none";
+	}
+	</script>
+	
+</body>
+</html>

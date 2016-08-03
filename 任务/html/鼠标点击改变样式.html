@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标点击改变样式</title>
+	<link rel="stylesheet" type="text/css" href="../css/鼠标点击改变样式.css">
+</head>
+<body>
+	<div id="blog1">
+		<p>我说变了吧</p>
+	</div>
+	<script type="text/javascript">
+		var change=document.getElementById("blog1");
+		change.onmousemove=function(){
+			change.className="hover";
+		};
+		change.onmouseout=function(){
+			change.className="";
+		};
+	</script>
+
+	
+</body>
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标点击改变样式</title>
+	<link rel="stylesheet" type="text/css" href="../css/鼠标点击改变样式.css">
+</head>
+<body>
+	<div id="blog1" onmousemove="mOver()" onmouseout="mOut()">
+		<p>我说变了吧</p>
+	</div>
+	<script type="text/javascript">
+		function mOver(){
+			var change=document.getElementById("blog1");
+			change.style.border="15px solid #F41111";
+			change.style.color="#DE6B6B";
+			change.style.background="#E1D7D7";
+		}
+		function mOut(){
+			var change=document.getElementById("blog1");
+			change.removeAttribute("style");
+		}
+	</script>
+
+	
+</body>
+</html>-->

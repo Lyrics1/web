@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>text-change</title>
+	<style type="text/css">
+	#blog{
+		position: relative;
+		top:58px;
+		left:630px;
+		width:150px;
+		height:150px;
+		border-color: #16F9F2;
+		background-color: #EFA8FC;
+	}
+	.butt{
+		position: relative;
+		top:20px;
+		left:600px;
+		float: left;
+	}
+	
+	</style>
+</head>
+<body>
+	<!--<div class="butt">
+	<form>
+		<input type="button" value="变宽" onclick="changew()"/>
+		<input type="button" value="变高" onclick="changeh()"/>
+		<input type="button" value="变色" onclick="changec()"/>
+		<input type="button" value="隐藏" onclick="hidde()"/>
+		<input type="button" value="重置" onclick="modify()"/>
+	</form>
+	</div>
+
+	<div id="blog"></div>
+	<script type="text/javascript">
+		var dblog=document.getElementById("blog");
+
+		function changew()
+		{
+			dblog.style.width="200px";
+		}
+		function changeh()
+		{
+			dblog.style.height="200px";
+		}
+		function changec()
+		{
+			dblog.style.background="#16E6F6";
+		}
+		function hidde()
+		{
+			dblog.style.display="none";
+		}
+		function modify()
+		{
+			dblog.removeAttribute("style");
+		
+		}
+		-->
+	<div class="butt">
+		<form>
+			<input type="button" value="变宽" onclick="set.changew()"/>
+			<input type="button" value="变高" onclick="set.changeh()"/>
+			<input type="button" value="变色" onclick="set.changec()"/>
+			<input type="button" value="隐藏" onclick="set.hidde()"/>
+			<input type="button" value="重置" onclick="set.modify()"/>
+		</form>
+	</div>
+
+	<div id="blog"></div>
+	<script type="text/javascript">
+		var dblog=document.getElementById("blog");
+		var set={
+			changew:function()
+			{
+				dblog.style.width="200px";
+			},
+			changeh:function()
+			{
+				dblog.style.height="200px";
+			},
+			changec:function()
+			{
+				dblog.style.background="#16E6F6";
+			},
+			hidde:function()
+			{
+				dblog.style.display="none";
+			},
+			modify:function()
+			{	var sure=confirm("确定重置？");
+				if(sure==true){
+				dblog.removeAttribute("style");
+				}
+				
+			}
+		}
+		 
+	</script>
+
+	
+</body>
+</html>
