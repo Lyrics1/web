@@ -1,0 +1,22 @@
+body,html{
+	margin: 0;
+	padding:0;
+}
+
+#main{
+	padding:15px 0px  0px  20px ;
+}
+
+.box{
+	border:0px solid;
+	padding: 15px 15px  0px 0px;
+	float: left;
+}
+
+.picture{
+	padding:3 3 0 0;
+	border: 1px solid #CCC;
+	border-radius: 5px  ;
+	box-shadow: 0 0 5px #ccc;
+}
+
