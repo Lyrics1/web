@@ -1,0 +1,510 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getElementsByTagName"
+			],
+			[
+				"p",
+				"parseFloat"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"ul",
+				"Ul"
+			],
+			[
+				"auto",
+				"autoz"
+			],
+			[
+				"u",
+				"Ul"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"te",
+				"text-orientation"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"n",
+				"Next1"
+			],
+			[
+				"next",
+				"Next2"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
+				"b",
+				"Btn"
+			],
+			[
+				"on",
+				"onclick"
+			],
+			[
+				"getE",
+				"getElementsByTagName"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"a",
+				"aLi"
+			],
+			[
+				"max",
+				"maxT"
+			],
+			[
+				"m",
+				"maxL"
+			],
+			[
+				"i",
+				"iT"
+			],
+			[
+				"off",
+				"offsetWidth"
+			],
+			[
+				"dis",
+				"disY"
+			],
+			[
+				"c",
+				"clientY"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"game",
+				"Game"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"me",
+				"Menu"
+			],
+			[
+				"span",
+				"Span"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"drop",
+				"dropdown-menu"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"t",
+				"type	Attr"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"width",
+				"width"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"argin",
+				"margin-top"
+			],
+			[
+				"bore",
+				"border"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"col",
+				"color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 173.0,
+		"last_filter": "js",
+		"selected_items":
+		[
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"txt",
+				"Set Syntax: TeX Math"
+			],
+			[
+				"ma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/eclipse/java/code/prictice/src/prictice/Fan.java",
+		"/D/eclipse/java/code/prictice/src/prictice/Account.java",
+		"/D/eclipse/java/code/prictice/src/prictice/RegularPolygon.java",
+		"/D/网页制作软件/Git/web/任务/html/倒计时.html",
+		"/C/Users/admin/Desktop/microwave1/js/index.js",
+		"/C/Users/admin/Desktop/microwave1/css/index.css",
+		"/D/Bootstrap/code/轮播图.html",
+		"/C/Users/admin/Desktop/microwave1/index.html",
+		"/D/Bootstrap/code/pin图.html",
+		"/D/网页制作软件/Git/web/任务/html/div点击变色.html",
+		"/D/网页制作软件/Git/web/html练习/prompt.html",
+		"/D/网页制作软件/Git/web/任务/html/鼠标属性改变路径.html",
+		"/D/Bootstrap/code/聊天版.html",
+		"/D/Bootstrap/code/李方盒子.html",
+		"/D/Bootstrap/code/炫酷1.html",
+		"/C/Users/admin/Desktop/microwave1/index.js",
+		"/D/Bootstrap/code/主页.css",
+		"/D/网页制作软件/Git/hexo/source/_posts/一些css基础理解.md",
+		"/C/Users/admin/Desktop/microwave1/imdex.js",
+		"/D/Bootstrap/code/拼图游戏.html",
+		"/D/Bootstrap/code/拼图游戏.js",
+		"/D/网页制作软件/Git/web/任务/html/表格和按钮.html",
+		"/D/网页制作软件/Git/web/任务/css/模拟select控件.css",
+		"/D/Bootstrap/code/select 控件.html",
+		"/D/Bootstrap/code/select 控件.css",
+		"/D/网页制作软件/Git/web/任务/css/响应式布局.css",
+		"/D/Bootstrap/code/栅格系统.html",
+		"/D/Bootstrap/code/动画.js",
+		"/D/网页制作软件/Git/web/任务/html/自动换方向幻灯片放映.html",
+		"/D/网页制作软件/Git/web/任务/html/响应式布局.html",
+		"/D/网页制作软件/Git/web/任务/html/复选框.html",
+		"/D/Bootstrap/code/拖住啊哦.html",
+		"/D/Bootstrap/code/游戏.html",
+		"/D/eclipse/java/code/prictice/src/prictice/HuaRongLoad.java",
+		"/D/网页制作软件/Git/web/任务/html/页面换肤.html",
+		"/D/Bootstrap/code/拼图游戏.css",
+		"/D/网页制作软件/Git/web/任务/html/鼠标滑过放大.html",
+		"/D/Bootstrap/code/主页2.html",
+		"/D/Bootstrap/code/llll.css",
+		"/D/Bootstrap/code/主页2.css",
+		"/C/Users/admin/Desktop/动力强",
+		"/D/网页制作软件/Git/web/任务/html/华容道.html",
+		"/D/网页制作软件/Git/web/任务/css/华容道.css",
+		"/D/网页制作软件/Git/hexo/source/_posts/RegExp.html",
+		"/D/网页制作软件/Git/web/任务/css/表格和按钮.css",
+		"/D/Bootstrap/code/表单和图片.html",
+		"/D/网页制作软件/Git/web/任务/html/百度.html",
+		"/D/网页制作软件/Git/hexo/themes/huno/source/css/uno.css",
+		"/D/网页制作软件/Git/hexo/source/about/index.md",
+		"/D/网页制作软件/Git/hexo/source/archive/index.md",
+		"/D/网页制作软件/Git/hexo/themes/huno/_config.yml",
+		"/D/网页制作软件/Git/hexo/_config.yml",
+		"/D/实验数据结构/迷宫/迷宫.dsp",
+		"/D/网页制作软件/Git/hexo/source/_posts/apply和call.md",
+		"/D/网页制作软件/Git/hexo/source/_posts/JavaScript变量作用域和内存.md",
+		"/D/网页制作软件/Git/hexo/source/_posts/JavaScript基础知识点.md",
+		"/D/网页制作软件/Git/hexo/source/_posts/JavaScript引用类型.md",
+		"/D/网页制作软件/Git/hexo/source/_posts/JS-正则表达式.md",
+		"/D/网页制作软件/Git/hexo/source/_posts/note-taking.md",
+		"/D/网页制作软件/Git/hexo/source/_posts/如何搭建自己的github博客.md",
+		"/C/Users/admin/Desktop/python-爬虫的小知识.md",
+		"/D/Bootstrap/code/cop.html",
+		"/D/网页制作软件/Git/hexo/source/_posts/正则表达式.md",
+		"/D/网页制作软件/Git/hexo/source/name",
+		"/D/网页制作软件/Git/hexo/source/_posts/python-爬虫小知识.md",
+		"/C/Users/admin/Desktop/题目",
+		"/C/Users/admin/Desktop/题.txt",
+		"/D/网页制作软件/Git/hexo/=q!",
+		"/D/网页制作软件/Git/hexo/source/_posts/正则表达式.mdown",
+		"/D/网页制作软件/Git/web/任务/html/鼠标点击改变样式.html",
+		"/D/网页制作软件/Git/web/任务/html/函数传参，改变div.html",
+		"/D/网页制作软件/Git/web/任务/html/百度-9.html"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			".panel",
+			"#	\n",
+			"	\n",
+			";\n",
+			"inter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"' '",
+			" ",
+			"",
+			"inner"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "主页.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"html",
+				"D:\\网页制作软件\\Git\\web\\任务\\html\\arguement.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

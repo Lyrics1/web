@@ -1,0 +1,57 @@
+body{
+	margin:0;
+	padding: 0;
+	background-color:#ECE8E8;
+	background: url(../img/QQ截图20161113164115.png)  ;
+	background-size: 100% 100%;
+	z-index: 1;
+	
+}
+html{
+	margin:0;
+	padding: 0;
+}
+#continer-blog{
+	margin-top:9% ;
+	margin-left: 30%; /*#C7C4C4;*/
+	border: 1px solid #8F8C8C;
+	width: 40%;
+	height: 35em;
+	margin-bottom: 1em;
+	padding: 2em;
+	border-radius: 5px;
+	z-index: 100;
+}
+
+#login{
+	text-align: center;
+	color: #fff;
+	line-height: 3em;
+	font-size: 2em;
+	background-color: #8F8B8B;
+	margin-bottom: 2em;
+}
+#split{
+	margin-bottom: 2em !important;
+}
+#enter{
+	width:15em ;
+	height:3em;
+	margin-right: 1em;
+}
+#passward{
+	height:3em
+}
+#cookie{
+	color: #4A4848;
+
+}
+
+
+/*@media(max-width: 768px)
+{
+	#enter{  
+		width: 13em;
+		height: 3em;
+	}
+}*/
