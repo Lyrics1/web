@@ -1,0 +1,283 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+
+	
+
+	<title>网页设计大赛</title>
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+
+	<link rel="stylesheet" media="screen" href="css/Opensans.css">
+	<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="assets/css/font-awesome.min.css">-->
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="css/main.css">
+<!--	<link rel="stylesheet" type="text/css" href="login.css">-->
+	<link rel="stylesheet" type="text/css" href="css/competion.css">
+</head>
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<!--	<a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.png" alt="Association of Network and Technology"></a>-->
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="../index.html">主页</a></li>
+					<li><a href="../../blog.xiyounet.org/default.htm">专栏</a></li>
+					<li><a href="../../lib.xiyounet.org/default.htm">网协图书馆</a></li>
+					<li><a href="about.html">关于</a></li>
+					<li class="active"><a href="../contact.html">联系我们</a></li>
+					<!-- <li><a class="btn" href="signin.html">SIGN IN / SIGN UP</a></li> -->
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary"></header>
+<!--container-->
+<div id="container">
+
+	<div id="tip">
+		<li>
+			<ol><a href=""> 主页 </a> / <abbr style="color:#838181">2017 网页设计大赛报名</abbr> </ol>
+		</li>	
+	</div>
+	
+	<div class="container  Width">
+		<!-- <header class="head"><center>网页设计大赛</center></header><hr> -->
+		<input type="button" name="sign" class="btn  btn-myself choose" value="报名"  onclick="choose(name)">
+		<input type="button" name="rules" class="btn  btn-myself" value="比赛细则" onclick="choose(name);">
+		<input type="button" name="file" class="btn  btn-myself" value="作品提交" onclick="choose(name)">
+		
+		<div class="row  border">
+			<!-- <label >网页设计大赛</label> -->
+			<div id="sign"  >
+				<center class="information">团队基本信息</center><hr>
+
+				<div class="col-xs-12 Height ">
+					<!-- <span class="input-group-addon "></span> -->
+						<label class="font">团队名称</label>
+						<input type="text" name="TeamName" placeholder="Team:" class="form-control">
+
+
+					</div>
+					<div class="col-xs-12 Height" >
+						<label class="font">联系方式</label>
+						<input type="text" name="Telnum" placeholder="Tel:" class="form-control">
+						
+					</div>
+					<div class="col-xs-12 Height">
+						<label class="font">email</label>
+						<input type="text" name="TeamName" placeholder="Email:" class="form-control">
+					</div>
+					<div class="col-xs-12">
+						<input type="text" name="success" value=""  id="success-err" >
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<input type="button" name="submit" value="提交信息" class=" btn form-control submit">
+					</div>
+			</div>
+			<div id="competition-rules">
+				<center class="information">比赛细则</center><hr>
+				
+				<ul>
+					<li>一、比赛主题 : 让科技创新碰撞人文精神</li>
+					<li>二、参赛对象 : 西安邮电大学所有在校学生，可个人参赛亦可组队参赛（不多于3人）
+					全体队伍分两个组进行比赛：低年级组和高年级组。
+					低年级组为：队内半数或半数以上成员为大一学生。
+					高年级组为：队内半数以上成员为大二、大三或大四学生。</li>
+					<li>三、组织机构 : 西安邮电大学网络科技协会</li>
+					<li></li>
+				</ul>
+				<label class="download"><a href="第七届网页设计大赛.doc"> 比赛要求和参赛要求附件下载</a></label>
+			</div>
+			<div id="submit_file">
+				<center class="information">作品提交</center><hr>
+			   
+				<div id="file" class="file-font">
+				 <input id="id_token" type="hidden" value="" name="token" />
+				<center>
+
+				<i class="fa fa-file-archive-o fa-lg" aria-hidden="true"></i> zip文件拖拽至此
+				</center>			
+				</div>	
+				<div id="shuru">
+				<div class="input-group" >
+					<span class="input-group-addon font">团队名称:</span>
+					<input type="text" class="form-control" id="teamname">
+					
+				</div><p id="tishi"></p></div>
+				<div class="require">
+				
+				<!-- <div class="input-group" >
+					<span class="input-group-addon font">团队名称:</span>
+					<input type="text" class="form-control" id="teamname">
+					
+				</div><p id="tishi"></p> -->
+				
+				<p style="margin-top:2em">上传作品要求： 请以以压缩包的形式上传。</p>
+				<p>压缩文件名：组名</p>
+				<p ><i class="fa fa-exclamation" aria-hidden="true" style="color:red"></i>    注意事项：提交作品的机会只有一次请修改好之后再选择提交。</div></p>
+				<div class="progress"></div>
+			
+			<div class="progress"></div>
+		<table class="table table-striped table-hover text-left"   style="margin-top:40px;display:none">
+				        <thead>
+				           <tr>
+				              <th class="col-md-4">上传情况：</th>
+				           </tr>
+				           </thead>
+				            <tbody id="fsUploadProgress">
+				         </tbody>
+		</table>	
+			</div>
+
+			
+		</div>
+	</div>
+	
+</div>
+<!-- end of container -->
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">联系我们</h3>
+						<div class="widget-body">
+							<address>陕西省西安市长安区西安邮电大学 东区 FZ130	</address>
+								<p><b>邮箱:</b><a href="mailto:#">admin@xiyouant.org</a><br></p>
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Follow Us</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a class="social-btn bspopover" data-toggle="popover" data-placement="top" data-trigger="hover" data-html="true"data-content="<img src=images/wechat.jpg style='width: 140px; height: 140px;'>" data-original-title="" title="">
+      							<i class="fa fa-weixin fa-2"></i>
+    							</a>
+								<a href="../https@github.com/xiyouant" target="_blank"><i class="fa fa-github fa-2"></i></a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">内容许可</h3>
+						<div class="widget-body">
+							<p>本站由 <a href="../https@www.digitalocean.com/@refcode=3c8422b30f9d">DigitalOcean</a> 提供服务器支持 七牛 提供 CDN 存储服务</p>
+							<p>除特别说明外，用户内容均采用
+							<a rel="license" target="_blank" href="../creativecommons.org/licenses/by-sa/3.0/cn/default.htm">知识共享署名-相同方式共享 3.0 中国大陆许可协议</a>进行许可</p>
+						</div>
+					</div>
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="#">主页</a> |
+								<a href="../blog.xiyounet.org/default.htm">专栏</a> |
+								<a href="../lib.xiyounet.org/default.htm">网协图书馆</a> |
+								<a href="contact.html">联系我们</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-center">Copyright &copy; 2010-<span id="copyright"></span> 西安邮电大学计算机院网络科技协会.</p>
+							<script>var year = new Date().getFullYear();document.getElementById("copyright").innerHTML=year;</script>
+						</div>
+					</div>
+                 </div> <!-- /row of widgets -->
+			</div>
+		</div>
+
+	</footer>
+<!--	<script src="../cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>-->
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/headroom.min.js"></script>
+	<script src="js/jQuery.headroom.min.js"></script>
+	<script src="js/template.js"></script>
+    <script src="js/competion.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		
+		var sign=document.getElementById('sign');
+		var rules=document.getElementById('competition-rules');
+		var submit_file=document.getElementById('submit_file');
+		function choose(name){
+			console.log(name)
+			if(name=='sign'){
+				submit_file.style.display="none";
+				rules.style.display="none";
+				sign.style.display="block"
+			}else if(name=='rules'){
+				submit_file.style.display="none"
+				rules.style.display="block"
+				sign.style.display="none"
+			}else{
+				submit_file.style.display="block"
+				rules.style.display="none"
+				sign.style.display="none"
+			}
+		}
+	</script>
+	<!-- <script type="text/javascript">
+       $.ajax({
+       	   url:'http://www.mperson.club/qiniu/uptoken.php',
+       	   // crossDomain:true,
+       	   method:'GET',
+       	   dataType: "jsonp",
+       	   success:function(data){
+               document.getElementById("id_token").value=data
+       	   },
+       	   error:function(data){
+       	   console.log(data);
+       	   	alert("请求token失败");
+       	   }
+       });
+	</script>-->
+		<!--<script src="../cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>-->
+
+     
+	<!--  popover initialization -->
+	<script>$(function () {$('[data-toggle="popover"]').popover()})</script>
+	
+	<!--<script type="text/javascript" src="js/getToken.js"></script>-->
+	<script type="text/javascript" src="js/plupload.full.min.js"></script>
+	<script type="text/javascript" src="js/zh_CN.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/qiniu.js"></script>
+	<script type="text/javascript" src="js/highlight.js"></script>
+	<script type="text/javascript" src="js/qiniuSet.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+*:focus{
+			outline:none; /* Prevents blue border in Webkit */
+		}
+
+		body {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /*  */
+			font-size: 18px;
+		}
+		
+		form {
+			width:500px;
+			margin: 20px auto;
+		}
+
+		p {
+			line-height: 1.6;
+		}
+
+		input, textarea {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			background-color:#fff;
+			color: #555;
+			border:1px solid #ccc;
+			font-size:16px;
+			width:100%;
+			height: 30px;
+			min-height:20px;
+			display:block;
+			padding: 6px 12px;
+			
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+			border-radius:5px;
+			
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			transition: all 0.5s ease-in-out;
+		}
+		
+		textarea {
+				min-height:200px;
+		}
+
+		input:focus, textarea:focus {
+			-webkit-box-shadow:0 0 25px #ccc;
+			-moz-box-shadow:0 0 25px #ccc;
+			box-shadow:0 0 25px #ccc;
+			
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			transform: scale(1.05);
+		}
+		
+		/* The interesting bit */
+		
+		input:not(:focus), textarea:not(:focus) {
+			opacity:0.5;
+		}
+		
+		input:required, textarea:required {
+			background:url("../images/asterisk_orange.png") no-repeat 0px 7px;						
+		}
+
+		input:valid, textarea:valid {
+			background:url("../images/tick.png") no-repeat 280px 5px;			
+		}		
+
+		input:focus:invalid, textarea:focus:invalid {
+			background:url("../images/cancel.png") no-repeat 280px 7px;						
+		}
+
+		button{
+			height: 40px;
+			padding:10px;
+			background:none;
+			opacity:1.0;
+		}
+		

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	<title>网页设计大赛报名通道</title>
+
+	<link rel="shortcut icon" href="images/gt_favicon.png">
+	
+	<link rel="stylesheet" media="screen" href="css/Opensans.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/content.css">-->
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="css/qiniu.css">
+	<link rel="stylesheet" href="css/main.css">
+		<style type="text/css">
+         #container{
+         	width: 170px;
+         	height: 300px;
+         	border: 1px solid;
+         }
+	</style>
+	 <script type="text/javascript">
+	   function xmlhttp() {
+                var $xmlhttp;
+                if (window.XMLHttpRequest) {
+                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                    $xmlhttp = new XMLHttpRequest();
+                } else {
+                    // code for IE6, IE5
+                    $xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                return $xmlhttp;
+            }
+             window.onload = function(){
+                $xmlhttp = xmlhttp();
+                $xmlhttp.onreadystatechange = function() {
+                    if ($xmlhttp.readyState == 4) {
+                        if($xmlhttp.status == 200){
+                            document.getElementById('id_token').value = $xmlhttp.responseText;
+                            console.log($xmlhttp.responseText);
+                        } else {
+                            alert('get uptoken other than 200 code was returned')
+                        }
+                    }
+                }
+               
+                $upTokenUrl = 'http://123.206.184.46/qiniu/getuptoken.php';
+                $xmlhttp.open('GET', $upTokenUrl,false);
+                $xmlhttp.send(); 
+                $file = document.getElementById('id_file');
+                $file.onchange = function(){
+                    $key = $file.value.split(/(\\|\/)/g).pop(); 
+                    document.getElementById('id_key').value = $key;
+                    
+                    $url = document.getElementById('id_url')
+                    $url.href  = $key;
+                }
+         }
+           
+</script>
+</head>
+<body>
+	<form action="http://up.qiniu.com" enctype="multipart/form-data" method="post">
+	  <div id="container">
+		<input type="hidden" name="token" id="id_token">
+		<input id="id_key" name="key" type="hidden" />
+		<input type="file" name="file" id="id_file">
+		<input type="submit" value="上传">
+	  </div>
+	</form>
+	       <!-- <form action="http://up.qiniu.com" method="post" enctype="multipart/form-data" >  
+            <table>
+                <tr>
+                    <td>Upload Token(<a href="">生成Token的代码</a>):</td>
+                    <td><input id="id_token" name="token" type="text" /></td>
+                </tr>
+                <tr>
+                    <td>上传文件名:</td>
+                    <td><input id="id_key" name="key" type="text" /></td>
+                </tr>
+                <tr>
+                    <td>上传后文件外链(<a href="http://developer.qiniu.com/docs/v6/api/overview/dn/security.html">外链规则</a>):</td>
+                    <td><a id="id_url" href=""/></a></td>
+                </tr>
+                <tr>
+                    <td>文件（小于4MB）:</td>
+                    <td><input id="id_file" name="file" type="file" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="上传" id="submit"/></td>
+                </tr>
+            </table>
+        </form>  -->
+        	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/headroom.min.js"></script>
+	<script src="js/jQuery.headroom.min.js"></script>
+	<script src="js/template.js"></script>
+
+	<!--  popover initialization -->
+	<script>$(function () {$('[data-toggle="popover"]').popover()})</script>
+	<script type="text/javascript" src="js/plupload.full.min.js"></script>
+	<script type="text/javascript" src="js/zh_CN.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/qiniu.js"></script>
+	<script type="text/javascript" src="js/highlight.js"></script>
+	<script type="text/javascript" src="js/qiniuSet.js"></script>
+</body>
+</html>

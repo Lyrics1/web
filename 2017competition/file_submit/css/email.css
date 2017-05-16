@@ -1,0 +1,37 @@
+.middle{
+	margin: 45px 0px 0px 10px;
+	width: 83%;
+	height: auto;
+}
+textarea{
+	height: 175px !important;
+	resize: none;
+	font-size: 17px !important;
+	color: #eee;
+}
+#top{
+	margin-top: 82px !important;
+}
+#sub{
+	float: right;
+	margin-top: 25px;
+}
+h1{
+	color: #a94442;
+}
+small{
+	color:  #956C24 !important;
+}
+@media(min-width: 768px) and (min-height: 1033px){
+	footer{
+		width: 100%;
+		position: absolute;
+		bottom: 0px;
+	}
+}
+@media(min-width: 768px){
+	#content{
+	margin: 0px -6%;
+	width: 95% !important;
+  }
+}
