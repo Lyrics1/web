@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,user-scalable=no">
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <div id="show">已加入你喜欢的音乐</div>
+    <div id="header" >
+        <img src="../img/header.png" id="header-img" style="cursor: pointer">
+        <div id="button1"><i class="fa fa-angle-left fa-2x inco-color" aria-hidden="true" ></i></div>
+        <div id="button2"><i class="fa fa-angle-right fa-2x inco-color" aria-hidden="true" ></i></div>
+        <div id="button3">
+            <input type="text" placeholder="搜索歌手,音乐,歌词,用户" style="background-color:#737373;border: 0px;font-color:#fff;font-size:1rem;margin-right: 3rem;">
+            <i class="fa fa-search fa-1x inco-color" aria-hidden="true"></i>
+        </div>
+        <div id="user">
+
+           <input type="file" id="user_photo" accept=" image/png,image/jpg" style="opacity: 0">
+        </div>
+
+            <div id="user-name" ><abbr >Lyricsonly</abbr> <i class="fa fa-caret-up fa-5x updown" style="margin-top:-25px" aria-hidden="true" ></i><i class="fa fa-caret-up " aria-hidden="true" ></i><i class="fa fa-caret-down updown " aria-hidden="true" ></i></div>
+
+
+    </div>
+    <div id="inframe_left">
+        <abbr id="cleftL">推荐</abbr>
+        <ul id="cleft">
+            <a href=""><li><i class="fa fa-music" aria-hidden="true"></i> &nbsp&nbsp发现音乐</li></a>
+            <a href=""><li><i class="fa fa-rss" aria-hidden="true"></i>&nbsp&nbsp 私人FM</li></a>
+            <a href=""><li><i class="fa fa-caret-square-o-right" aria-hidden="true"></i>&nbsp&nbspMV</li></a>
+            <a href=""><li><i class="fa fa-venus-double" aria-hidden="true"></i>&nbsp&nbsp朋友</li></a>
+        </ul>
+        <abbr id="cleftL">我的音乐</abbr>
+        <ul id="cleft">
+            <a href=""><li><i class="fa fa-headphones" aria-hidden="true"></i>&nbsp&nbsp本地音乐</li></a>
+            <a href=""><li><i class="fa fa-download" aria-hidden="true"></i>&nbsp&nbsp下载管理</li></a>
+            <a href=""><li><i class="fa fa-cloud" aria-hidden="true"></i>&nbsp&nbsp我的音乐云盘</li></a>
+            <a href=""><li><i class="fa fa-user" aria-hidden="true"></i>&nbsp&nbsp我的歌手</li></a>
+            <a href=""><li><i class="fa fa-caret-square-o-right" aria-hidden="true"></i>&nbsp&nbsp我的MV</li></a>
+            <a href=""><li><i class="fa fa-podcast" aria-hidden="true"></i>&nbsp&nbsp我的电台</li></a>
+        </ul>
+        <div id="ccreat"><abbr id="left1">创建的歌单</abbr><span id="left2"><i class="fa fa-plus-circle"  aria-hidden="true"></i>&nbsp&nbsp<abbr><i class="fa fa-angle-double-right" aria-hidden="true" style="margin-left: 2rem"></i></abbr></span></div>
+        <div id="chidden">
+            <ul id="cleft">
+                <a href=""><li><i class="fa fa-heart" aria-hidden="true">&nbsp&nbsp我喜欢的音乐</i></li></a>
+            </ul>
+        </div>
+    </div>
+    <div id="small-show">
+        <div id="picture-ing">
+            <img src="../img/user.jpg" >
+        </div>
+        <div id="text-show">
+            <div id="music-name">
+                <abbr style="display: block;width:10rem;height:2rem;overflow: hidden">Home long</abbr>
+                <abbr style="display: block;width:10rem;height:2rem;overflow: hidden ;margi-top:-0.5rem;">justin</abbr>
+            </div>
+            <div id="share">
+                <i class="fa fa-heart-o "  aria-hidden="true"></i><br>
+                <i class="fa fa-share-square-o "   aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div id="play">
+       <div id="play_start"> <i class="fa fa-step-backward fa-lg inco-color " id="pre" aria-hidden="true"></i></div>
+        <div id="play_start"> <i class="fa fa-play fa-lg inco-color " id="Play" aria-hidden="true" ></i><i class="fa fa-pause inco-color " id="pause" aria-hidden="true"></i></div>
+
+        <div id="play_start"><i class="fa fa-step-forward fa-lg inco-color" id="next" aria-hidden="true"></i>
+        </div>
+        <abbr id="show-time"><i>00</i>:<i>00</i></abbr>
+        <div class="progress progress_my">
+            <div class="progress-bar progress-bar-success" id="process"></div>
+        </div>
+    </div>
+    <div id="contain">
+        <div id="head">
+            <ol>
+               <a href=""><li>个性推荐</li></a>
+                <a href=""><li>歌单</li></a>
+                <a href=""><li>主播电台</li></a>
+                <a href=""><li>排行榜</li></a>
+                <a href=""><li>歌手</li></a>
+                <a href=""><li>最新音乐</li></a>
+
+            </ol>
+        </div>
+        <div id="point">
+            <div id="imgL"><img src="../img/1.png"></div>
+            <div id="imgz"><img src="../img/3.png"> </div>
+            <div id="imgR"><img src="../img/2.png"> </div>
+            <div id="otherimg"><img src="../img/4.png"><img src="../img/5.png"></div>
+            <div id="pocL"></div>
+            <div id="pocR"></div>
+
+        </div><abbr >推荐歌单</abbr>
+        <!--<div id="line2"></div>-->
+        <div id="hidden">
+
+            <div id="user-information">
+
+                <div id="user-move"><strong>14<br>动态</strong> </div>
+                <div id="user-move"><strong>24<br>关注</strong> </div>
+                <div id="user-move" style="border-right:0px"><strong>5<br>粉丝</strong> </div>
+                <div id="line"></div>
+                <ul>
+                    <a href=""><li><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp&nbsp会员中心<abbr id="L">未订购</abbr><i class="fa fa-angle-double-right" aria-hidden="true"></i></li></a>
+                    <a href=""><li><i class="fa fa-fire" aria-hidden="true"></i>&nbsp&nbsp等级<span id="R">Lv.7</span><i class="fa fa-angle-double-right" aria-hidden="true"></i></li></a>
+                    <a href=""> <li><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>&nbsp&nbsp积分商城<span id="L1">288积分</span><i class="fa fa-angle-double-right" aria-hidden="true"></i></li></a>
+                    <a href=""><div id="line2"></div>
+                        <a href="">   <li><i class="fa fa-cog" aria-hidden="true"></i>&nbsp&nbsp个人设置<span id="R"></span><i class="fa fa-angle-double-right" aria-hidden="true"></i>  </li></a>
+                        <a href=""><li><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp&nbsp社交账号<span id="R1"><i class="fa fa-qq" aria-hidden="true"></i> <i class="fa fa-weixin" aria-hidden="true">&nbsp</i></span><i class="fa fa-angle-double-right" aria-hidden="true"></i></li></li></a>
+                        <a href="">       <li><i class="fa fa-spinner" aria-hidden="true"></i>&nbsp&nbsp导入歌单<span id="R"></span><i class="fa fa-angle-double-right" aria-hidden="true"></i></li></a>
+                        <a href="">     <div id="line2"></div>
+                            <a href="">       <li><i class="fa fa-circle-o-notch" aria-hidden="true"></i>&nbsp&nbsp退出登录<span id="R"></span><i class="fa fa-angle-double-right" aria-hidden="true"></i> </li></a>
+                </ul>
+            </div>
+        </div>
+        <div id="music">
+
+            <div id="music_blog"><span id="music_img"><img src=""></span>
+                <div id="music_img_play">
+                    <audio src="" id="start" ></audio>
+                    <i class="fa fa-headphones fa-lg inco-color" aria-hidden="true" id="play_tubiao"><label id="label">11111</label></i>
+                    <i class="fa fa-play-circle-o fa-lg inco-color" aria-hidden="true" id="playing"></i>
+                    <i class="fa fa-pause-circle-o fa-lg inco-color" aria-hidden="true" id="playingstart"></i>
+                  </div>
+            </div>
+            <div id="music_blog"><span id="music_img"><img src=""></span>
+                <div id="music_img_play">
+                    <audio src="" id="starta"></audio>
+                        <i class="fa fa-headphones fa-lg inco-color" aria-hidden="true" id="play_tubiao"><label id="label">11111</label></i>
+                        <i class="fa fa-play-circle-o fa-lg inco-color" aria-hidden="true" id="playing"></i>
+                    <!--<audio  controls loop autoplay id="playingstart" >-->
+                        <!--<source src="../vedio/Drew Ryan Scott - Domino.mp3">-->
+                    <!--</audio>-->
+                        <i class="fa fa-pause-circle-o fa-lg inco-color" aria-hidden="true" id="playingstart"></i>
+                </div>
+            </div>
+            <div id="music_blog"><span id="music_img"><img src=""></span>
+                <div id="music_img_play">
+                    <audio src="" id="startb"></audio>
+                    <i class="fa fa-headphones fa-lg inco-color" aria-hidden="true" id="play_tubiao"><label id="label">11111</label></i>
+                    <i class="fa fa-play-circle-o fa-lg inco-color" aria-hidden="true" id="playing"></i>
+                    <i class="fa fa-pause-circle-o fa-lg inco-color" aria-hidden="true" id="playingstart"></i>
+                </div>
+            </div>
+            <div id="music_blog" ><span id="music_img"><img src=""></span>
+                <div id="music_img_play">
+                    <audio src="" id="startc"></audio>
+                    <i class="fa fa-headphones fa-lg inco-color" aria-hidden="true" id="play_tubiao"><label id="label">11111</label></i>
+                    <i class="fa fa-play-circle-o fa-lg inco-color" aria-hidden="true" id="playing"></i>
+                    <i class="fa fa-pause-circle-o fa-lg inco-color" aria-hidden="true" id="playingstart"></i>
+                </div>
+            </div>
+            <div id="music_blog" ><span id="music_img"><img src=""></span>
+                <div id="music_img_play">
+                    <audio src="" id="startd"></audio>
+                    <i class="fa fa-headphones fa-lg inco-color" aria-hidden="true" id="play_tubiao"><label id="label">11111</label></i>
+                    <i class="fa fa-play-circle-o fa-lg inco-color" aria-hidden="true" id="playing"></i>
+                    <i class="fa fa-pause-circle-o fa-lg inco-color" aria-hidden="true" id="playingstart"></i>
+                </div>
+            </div>
+            <div id="music_blog"><span id="music_img"><img src=""></span>
+                <div id="music_img_play">
+                    <audio src="" id="starte"></audio>
+                    <i class="fa fa-headphones fa-lg inco-color" aria-hidden="true" id="play_tubiao"><label id="label">11111</label></i>
+                    <i class="fa fa-play-circle-o fa-lg inco-color" aria-hidden="true" id="playing"></i>
+                    <i class="fa fa-pause-circle-o fa-lg inco-color" aria-hidden="true" id="playingstart"></i>
+                </div>
+            </div>
+            <div id="music_blog"><span id="music_img"><img src=""></span>
+                <div id="music_img_play">
+                    <audio src="" id="startf"></audio>
+                    <i class="fa fa-headphones fa-lg inco-color" aria-hidden="true" id="play_tubiao"><label id="label">11111</label></i>
+                    <i class="fa fa-play-circle-o fa-lg inco-color" aria-hidden="true" id="playing"></i>
+                    <i class="fa fa-pause-circle-o fa-lg inco-color" aria-hidden="true" id="playingstart"></i>
+                </div>
+            </div>
+            <div id="music_blog"><span id="music_img"><img src=""></span>
+                <div id="music_img_play">
+                    <audio src="" id="startg"></audio>
+                    <i class="fa fa-headphones fa-lg inco-color" aria-hidden="true" id="play_tubiao"><label id="label">11111</label></i>
+                    <i class="fa fa-play-circle-o fa-lg inco-color" aria-hidden="true" id="playing"></i>
+                    <i class="fa fa-pause-circle-o fa-lg inco-color" aria-hidden="true" id="playingstart"></i>
+                </div>
+            </div>
+
+
+            <!-- <audio src="../vedio/Lana Del Rey - Young And Beautiful.mp3"  controls preload="auto" loop>
+
+            </audio> -->
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+<script src="../js/index_L.js"></script>
+<script src="../js/jquery.min.js"></script>
+</body>
+</html>

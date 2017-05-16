@@ -1,0 +1,50 @@
+[
+  {
+    "src":"../img/01.jpg",
+    "url":"../vedio/Drew Ryan Scott - Domino.mp3",
+    "author":"Ryan",
+    "musicname":"Drew Ryan Scott - Domino.mp3"
+  },
+  {
+    "src":"../img/02.jpg",
+    "url":"../vedio/草东没有派对 - 勇敢的人.mp3",
+    "author":"乐队",
+    "musicname":"草东没有派对 - 勇敢的人"
+  },
+  {
+    "src":"../img/03.jpg",
+    "url":"../vedio/Lana Del Rey - Damn You.mp3",
+    "author":"Lanan",
+    "musicname":"Lana Del Rey - Damn You"
+  },
+  {
+    "src":"../img/04.jpg",
+    "url":"../vedio/吴亦凡 - JULY.mp3",
+    "author":"吴亦凡",
+    "musicname":" JULY"
+  },
+  {
+    "src":"../img/05.jpg",
+    "url":"../vedio/绘梨衣 - 最后的旅行——记《龙族》.mp3",
+    "author":"Sour",
+    "musicname":"绘梨衣 - 最后的旅行——记《龙族》.mp3"
+  },
+  {
+    "src":"../img/06.jpg",
+    "url":"../vedio/余佳运 - 和你.mp3",
+    "author":"余佳运",
+    "musicname":"和你"
+  },
+  {
+    "src":"../img/07.jpg",
+    "url":"../vedio/Owl City,Hanson - Unbelievable.mp3",
+    "author":"City",
+    "musicname":"Owl City,Hanson - Unbelievable"
+  },
+  {
+    "src":"../img/08.jpg",
+    "url":"../vedio/R3hab,The Chainsmokers,Halsey - Closer (R3hab Remix).mp3",
+    "author":"Closer",
+    "musicname":"R3hab,The Chainsmokers,Halsey - Closer (R3hab Remix)"
+  }
+]

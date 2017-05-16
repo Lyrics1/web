@@ -1,0 +1,14 @@
+[
+  {
+    "name":"张帆",
+    "start_time":10,
+    "end_time":80,
+    "stay_time":70
+  },
+  {
+    "name":"马小花",
+    "start_time":20,
+    "end_time":100,
+    "stay_time":80
+  }
+]

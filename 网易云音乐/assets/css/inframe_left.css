@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body,html{
+    width:95%;
+    height:auto;
+    overflow-x:hidden;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    line-height: 3rem;
+
+}
+li:hover{
+    background-color:  #DDDDDD;
+}
+a{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+#cleft{
+    margin-left:2rem;
+}
+#cleftL{
+    margin-left:1rem;
+}
+#left2{
+    margin-left:4rem;
+    cursor: pointer;
+}
+#ccreat{
+    display: block;
+    width:22rem;
+    height:auto;
+}
+#clist{
+    display: block;
+
+}
