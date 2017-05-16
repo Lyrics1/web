@@ -1,0 +1,200 @@
+html,body{
+	margin:0;
+	padding:0;
+}
+
+*{
+	box-sizing: border-box;
+}
+.container{
+	border: 0px solid #0A0A0A;
+	
+	width:100%;
+	height: 100%;
+	
+}
+.list p{
+	text-align: center;
+
+}
+.list ul li{
+	list-style: none;
+	line-height: 2em;
+}
+.list ul li:hover{
+	background: #626161;
+}
+.guajian{
+	width:20%;
+	height: 20px;
+	border: 1px solid  red;
+	/*background:url(../img/jian.PNG);*/
+	background-size: 100% 100%;
+	margin-left: 24%;
+}
+.one{
+	border: 0px solid red;
+	width:100%;
+	height: 450px;
+	background: #F7FBFB;
+	opacity: 0.9;
+	background: url(../img/QQ图片20170412215148.jpg);
+	background-size: 100% 100%;
+	
+}
+.one1{
+	border: 0px solid red;
+	width:100%;
+	height: 450px;
+	background: #F7FBFB;
+	opacity: 0.9;
+	background: url(../img/QQ图片20170312155355.jpg);
+	background-size: 100% 100%;
+	
+}
+.one2{
+	border: 0px solid red;
+	width:100%;
+	height: 450px;
+	background: #F7FBFB;
+	opacity: 0.9;
+	background: url(../img/QQ图片20170312155406.jpg);
+	background-size: 100% 100%;
+	
+}
+.one3{
+	border: 0px solid red;
+	width:100%;
+	height: 450px;
+	background: #F7FBFB;
+	opacity: 0.9;
+	background: url(../img/QQ图片20170312220023.jpg);
+	background-size: 100% 100%;
+	
+}
+.twol{
+	position: relative;
+	border: 0px solid #696464;
+	width:250px;
+	height: 500px;
+	margin-top:7%;
+	margin-left: 1%;
+	float: left;
+	perspective: 500;
+            -webkit-perspective: 500;
+
+
+
+}
+.list{
+	position: absolute;
+	cursor: pointer;
+	border: 1px solid #696464;
+	width:250px;
+	height: 500px;
+	
+	padding:1em 0em 0em 0em;
+
+	background: url(../img/捕获.PNG);
+	/*background: #4BDD2F;*/
+	background-size:100% 100%; 
+	transform: rotateY(40deg);
+
+overflow: hidden;
+	/*display: none;*/
+}
+.list:hover{
+	transform:  rotateY(0deg) ;
+}
+
+.two,.two2,.two3{
+	position: relative;
+	border: 1px solid #696464;
+	width:250px;
+	height: 500px;
+	margin-top:7%;
+	margin-left: -16%;
+	float: left;
+	perspective: 500;
+            -webkit-perspective: 500;
+}
+.two:hover{
+	z-index: 999;
+}
+.twol:hover{
+	z-index: 999;
+}
+.two2:hover{
+	z-index: 999;
+}
+.two3:hover{
+	z-index: 999;
+}
+
+
+.phone{
+	width:100%;
+	height:30%;
+	background: url(../img/QQ截图20170412205941.png);
+	background-size: 100% 100%;
+}
+.team{
+	/*position: relative;*/
+	border: 1px solid #696464;
+	width:300px;
+	height: 100px;
+	margin-top:10%;
+	margin-left: 8%;
+	background-color: #DDE0E1;
+	opacity:0.5;
+	font-size:2em;
+	line-height: 3em;
+	display: none;
+	/*visibility: hidden;*/
+	/*color:#FBF9F9;*/
+}
+.information{
+	border: 0px solid red;
+	width:300px;
+	height: 300px;
+	margin-top:0%;
+	margin-left: 8%;
+	display: none;
+	background-color: #DDE0E1;
+	opacity:0.5;
+	padding:1em;
+	line-height: 2em;
+}
+
+.TV{
+	border: 0px solid red;
+	position: absolute;
+	width:50%;
+	height:65%;
+	top:15%;
+	left: 48%;
+	background:url(../img/TV.jpg) no-repeat;
+	background-size: 100% 100%;
+	padding:1.5em 1.4em 2.3em 1.3em;
+}
+.video{
+	width:100%;
+	height:100%;
+	border: 0px solid red;
+	padding:0px 2px 0 0 ;
+	/*overflow: hidden;*/
+	background-size: 100% 100%;
+}
+.site{
+	border: 0px solid red;
+	position: absolute;
+	width:30%;
+	height:30%;
+	top:97%;
+	left: 35%;
+	background:url(../img/sitea.gif) no-repeat;
+	background-size: 100% 100%;
+	padding:1.5em 1.4em 2.3em 1.3em;
+}
+
+

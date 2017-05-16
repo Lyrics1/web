@@ -1,0 +1,260 @@
+body,html{
+	height: 100%;
+	margin:0;
+	padding: 0;
+
+}
+/**{
+	box-sizing: border-box;
+}*/
+body{
+	display: flex;
+	flex-direction: column; 
+	/*垂直列向排列*/
+	background: #FFFFFF;
+
+
+}
+main{
+	flex: 1 0 auto; /*flex-basis设置为auto这意味着Flex项目的初始宽度计算是基于内容的大小。*/
+	display: flex;
+	/*flex-grow: 1; 默认为0 铺满整个flex布局
+	flex-shrink: 0; 默认为1 表示伸缩依赖于flex的内容大小，0：Flex项目会随着浏览器缩放那个收缩。
+	flex-basis: auto; 基于自动对Flex项目的宽度重新计算（flex-basis: auto）*/
+}
+footer{
+	flex:0 0 90px;
+	background:  rgba(61, 100, 158, .9);
+}
+aside{
+	display: flex;/*现在也是一个弹性容器*/
+	flex-direction: column;/*垂直堆放图标*/
+	justify-content: space-around;/*因为方向改变了，如下在垂直方向上起作用。*/
+	align-items: center;/*居中显示*/
+	flex:0 0 4%;
+}
+aside i:hover{
+	cursor: pointer;
+}
+aside i.fa{
+	font-size: 1.2em;
+}
+.content{
+	display: flex;
+	flex:1 0 auto;
+	flex-direction: column;
+	display: none;
+}
+.content-index{
+	display: flex;
+	flex:1 0 auto;
+	flex-direction: column;
+	
+	
+}
+.namelist{
+	
+	flex:0 0 50px;
+	flex-direction:row;
+	justify-content: space-around;
+	align-items: flex-start;
+	background:  rgba(61, 100, 158, .9);
+
+}
+.mv-music{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	flex:0 1 45px;
+	width:100%;
+
+
+	
+}
+.music-img{
+	width:150px;
+	height:150px;
+	border: 0px solid red;
+	overflow: hidden;
+	margin:3em;
+	float: left;
+	box-shadow:  5px 5px 5px ;
+}
+.music{
+	border: 0px solid red;
+	width:655px;
+	height:480px;
+	border-right: 1px solid #7C7979;
+	/*padding: 0.5em	*/
+}
+.mv {
+	border: 0px solid red;
+	width:654px;
+	height:480px;
+	border-left: 1px solid #7C7979;
+}
+
+.music-head{
+	flex:0 0 280px;
+	display: flex;
+	background:  #4e4e4e;
+	/*flex-direction: row 默认为row 与父容器无关
+	*/
+}
+.controls{
+ 	padding:1em 1em 0.5em 0;
+}
+.listener-information{
+	padding: 1em;
+}
+.music-information{
+	display: flex;
+	flex:1 0 auto;
+	flex-direction: column;
+	padding-left: 4em;
+	font-weight: 300;
+	color: #FFF;
+}
+.music-information div:nth-child(1){
+	margin-bottom: auto;
+}
+.music-information div:nth-child(2){
+	margin-bottom: 1em;
+}
+.music-information div:nth-child(2) i.fa{
+	font-size: 1em; 
+	padding: 0 0.7em;
+	 font-weight: 800;
+}
+.music-information div:nth-child(1)  p:first-child{
+	font-size: 1.8em;
+	 margin: 0 0 10px;
+
+} 
+.music-information div:nth-child(1)  p:not(:first-child){
+	font-size: 0.9em;
+	 margin: 2px 0;
+
+
+}
+
+
+.music-list{
+	list-style: none;
+}
+.music-list li{
+	display: flex;
+	flex-direction: row;
+
+}
+.music-list li p{
+	flex:0 0 25%;
+}
+
+.music-list li:nth-child(2n){
+	background: #f2f2f2;
+}
+
+
+.set-up{
+	/*display: flex;*/
+	height:100%;
+	width:25%;
+	flex-direction: column;
+	flex:1 0 auto;
+	background: #DE4B4B;
+	position: fixed;
+	display: none;
+}
+.user{
+	display: flex;	
+	flex-direction: column;
+	border:0px solid#131212;
+	border-bottom: 1px solid #E3E1E1;
+	padding-top:1.5em;
+	padding-left: 1em;
+}
+.quit{
+	position: absolute;
+	right: 1em;
+	top:1em;
+}
+.user-picture{
+	width:100px;
+	height:100px;
+	border-radius: 50px;
+	background: #161515;
+	/*border:1px solid;*/
+	background: url(img/psb.jpg);
+	background-size: 100% 100%;
+}
+.user-namesign{
+	flex-direction: row;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding:0 1em 0 1em;
+	font-size: 1.2em;
+	font-weight: 800;
+}
+.sign{
+	border:1px solid;
+	border-radius: 5px;
+	padding:0 0.5em 0 0.5em;
+}
+.sign-list{
+	padding-left: 1em;
+}
+.set-up section:nth-child(2) p{
+	line-height: 5%;
+}
+.sign-end{
+	/*position: fixed;*/
+	display: flex;
+	flex: 1 1 5%;
+	/*background:#4CB9CF;*/
+	justify-content: space-around;
+	border-top: 1px solid #E4E2E2;
+	/*padding-top:2em; */
+	align-items: flex-end;
+
+}
+.split{
+	border:1px solid;
+	width:105%;
+	height: 1em;
+	margin-left: -1em;
+	opacity: 1em;
+}
+
+@media screen and (max-width: 400px) {
+	main{
+		flex-direction: column;
+	}
+	.music-head{
+		flex-direction: column;
+		flex:0 1 auto;
+		padding:1em;
+}
+.mv-music{
+	flex-direction: row;
+}
+aside{
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content:space-between;
+	flex:0 0 100%;
+	padding:1em;
+}
+.set-up{
+	width:80%;
+}
+}
+@media (max-width: 1024px) and(min-width: 401px){
+	.set-up{
+	width:40%;
+}
+}
+
+
+
