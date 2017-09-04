@@ -1,0 +1,32 @@
+ul{
+		list-style: none;
+		padding: 0;
+	    margin: 0;
+}
+ul#add_algorithm li,ul#explain li,ul#de_algorithm li{
+
+	    padding-left: 1rem;
+	    word-wrap: break-word;
+	  
+}
+@media(min-width: 768px){
+   #svg{
+   	margin-top: 0px;
+   	padding-top: 35px;
+   }
+}
+@media(min-width: 1024px){
+	
+	ul#add_algorithm,ul#explain,ul#de_algorithm{
+		padding-top: 20px;
+	}
+	ul#add_algorithm li,ul#explain li,ul#de_algorithm li{
+		  padding-top: 10px;
+	}
+	
+}
+@media(min-width: 425px){
+      ul#add_algorithm,ul#explain,ul#de_algorithm{
+		  padding-top: 10px;
+	}	
+}

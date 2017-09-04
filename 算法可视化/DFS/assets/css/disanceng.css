@@ -1,0 +1,928 @@
+body{
+	background: #f7f5f4;
+	overflow-x:hidden; 
+}
+
+@media(min-width: 1920px)
+{
+	.doing-1{
+	background: white;
+    height: 73vh;
+	width: 70vw;
+	margin: 14vh auto 25px auto;
+}
+.doing-2{
+	background: white;
+    height: 73vh;
+	width: 70vw;
+	margin-top: 14vh;
+	margin-bottom: 25px;
+	margin-left: 0.8vw;
+	animation: doing2-dong 2s;
+}
+.doing-3{
+	background: white;
+    height: 73vh;
+	width: 70vw;
+	margin: 14vh auto 25px auto;
+	animation: doing3-dong 2s;
+}
+@keyframes doing2-dong{
+	from{margin-left: 15vw;}
+	to{margin-left: 0.8vw; }
+}
+@keyframes doing3-dong{
+	from{margin-left: 0.8vw;}
+	to{margin-left: 15vw;}
+}
+
+
+.button-1{
+    
+}
+.button-2{
+	visibility: hidden;
+	display: inline-block;
+}
+.button-3{
+	display: inline-block;
+	animation:dong 1.5s;
+}
+@keyframes dong{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+
+.img-1{
+	float: right;
+	height: 50px;
+    width: 50px;
+    margin-top: 38px;
+}
+
+
+
+.pointer-1{
+	cursor: pointer;
+	height: 130px;
+	width: 70px;
+    float: right;
+    clear: right;
+    margin-top: 30vh;
+    margin-right: 20px;
+}
+.pointer-2{
+	cursor: pointer;
+	height: 130px;
+	width: 70px;
+    float: right;
+    margin-top: 30vh;
+    margin-right: 20px;
+    display: none;
+}
+.pointer-3
+{
+	float: right;
+	height: 50px;
+    width: 50px;
+    margin-top: 30vh;
+    display: none;
+}
+.pointer-4{
+	float: right;
+	height: 50px;
+    width: 50px;
+    margin-top: 30vh;
+    cursor: pointer;
+}
+.pointer-5{
+	cursor: pointer;
+	height: 130px;
+	width: 70px;
+    float: right;
+    margin-top: 180px;
+    margin-right: 20px;
+}
+
+
+.code-1{
+	display: none;
+	top: 14vh;
+}
+.code-2{
+	border-bottom: 5px solid #e64c13; 
+	background: rgba(160, 160, 160, 0.21);
+	width: 23.27vw;
+	height: 48.5vh;
+}
+.code-3{
+	width: 23.27vw;
+	height: 24.5vh;
+	background: rgba(0, 0, 0, 0.64);
+	color: white
+}
+.code-4{
+	float: right;
+	margin-right: 2.64vw;
+	animation: code4-dong 2s;
+}
+.code-5{
+	float: right;
+	animation: code5-dong 2s;
+} 
+.code-6{
+	display: block;
+	top: 14vh;
+}
+@keyframes code4-dong{
+	from{margin-right: -30vw;}
+	to{margin-right: 2.64vw;}
+}
+@keyframes code5-dong{
+	from{margin-right: 2.64vw;}
+	to{margin-right: -30vw;}
+}
+
+
+.process-1{
+	/* position: relative;
+	top: 480px;
+	border-radius: 0px !important; */
+	width: 70vw;
+	margin: 1px auto;
+}
+.click-random{
+	background: #d9513c;
+	color: white;
+	border:0px;
+	height: 5vh;
+	width: 8vw;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-right: 1vw;
+	font-size: 1vw;
+}
+.click-freedom-1{
+	background: #ff8a27;
+	color: white;
+	border:0px;
+	height: 5vh;
+	width: 8vw;
+	border-radius: 4px;
+    font-size: 1vw;
+	margin-top: 15px;
+}
+.click-freedom-2{
+	background: #ff8a27;
+	color: white;
+	border:0px;
+	height: 5vh;
+	width: 8vw;
+	border-radius: 4px;
+	margin-top: 15px;
+	font-size: 1vw;
+}
+.click-input{
+	height: 5vh;
+	width: 18vw;
+	background: black;
+	color: white;
+	border-radius: 4px;
+	font-size: 1vw;
+}
+.click-speed{
+	background: #1abc9c;
+	color: white;
+	border:0px;
+	height: 5vh;
+	width: 8vw;
+	border-radius: 4px;
+	margin-top: 15px;
+	font-size: 1vw;
+}
+.click-speed-1{
+	color: black;
+	height:5vh;
+	width: 8vw;
+	font-size: 1vw;
+}
+.click-inputspeed{
+    height: 5vh; 
+    background: black; 
+    color: white;
+    width: 6vw;
+    font-size: 1vw;
+}
+.click-speed-2{
+	display: inline-block;   
+}
+.click-add{
+	color: white;
+	border:0px;
+	height: 5vh;
+    border-radius: 4px;
+	margin-top: 20px;
+	margin-right: 1vw;
+	font-size: 1vw;
+	padding: 0.5vw 1vw;
+}
+.click-add1{
+	color: white;
+	border:0px;
+	height: 5vh;
+    border-radius: 4px;
+	margin-top: 20px;
+	margin-right: 1vw;
+	font-size: 1vw;
+	padding: 0.5vw 1vw;
+}
+.click-add2{
+	background: rgb(200, 65, 15) !important;
+	color: black;
+	border:0px;
+	height: 5vh;
+    border-radius: 4px;
+	margin-top: 20px;
+	margin-right: 1vw;
+	font-size: 1vw;
+	padding: 0.5vw 1vw;
+}
+.click-al{
+	margin-right: 2vw;
+	display: inline-block;
+}
+.method{
+	float: right;
+	width: 10vw;
+	margin-right: 40px;
+	cursor: pointer;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 1vw;
+}
+.method-1{
+	float: right;
+	width: 10vw;
+	margin-right: 40px;
+	display: none;
+	cursor: pointer;
+}
+
+.but{
+	width: 70vw;
+	margin: 10px auto;
+}
+.kaishi{
+	background:#ff4363;
+	color: white;
+	border:0px;
+	height: 46px;
+	width: 132px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-right: 10vw;
+	margin-left: 5vw;
+	margin-top: 20px;
+}
+.jieshu{
+	background: #fc9d99;
+	color: white;
+	border:0px;
+	height: 46px;
+	width: 132px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-right: 10vw;
+	margin-left: 5vw;
+	margin-top: 20px;
+}
+#kaishi{
+    position: absolute;
+    top: 83vh;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+#zanting{
+    position: absolute;
+    top: 83vh;
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+} 
+
+}
+
+
+/* ================================================================ */
+
+
+
+@media(min-width: 769px) and (max-width: 1919px)
+{
+.doing-1{
+	background: white;
+    height: 580px;
+	width: 70vw;
+	margin: 125px auto 12px auto;
+}
+.doing-2{
+	background: white;
+    height: 580px;
+	width: 70vw;
+	margin-top: 125px;
+	margin-bottom: 25px;
+	margin-left: 0.8vw;
+	animation: doing2-dong 2s;
+}
+.doing-3{
+	background: white;
+    height: 580px;
+	width: 70vw;
+	margin: 125px auto 12px auto;
+	animation: doing3-dong 2s;
+}
+@keyframes doing2-dong{
+	from{margin-left: 15vw;}
+	to{margin-left: 0.8vw; }
+}
+@keyframes doing3-dong{
+	from{margin-left: 0.8vw;}
+	to{margin-left: 15vw;}
+}
+
+
+.button-1{
+    
+}
+.button-2{
+	visibility: hidden;
+	display: inline-block;
+}
+.button-3{
+	display: inline-block;
+	animation:dong 1.5s;
+}
+@keyframes dong{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+
+.img-1{
+	float: right;
+	height: 50px;
+    width: 50px;
+    margin-top: 38px;
+}
+
+
+
+.pointer-1{
+	cursor: pointer;
+	height: 130px;
+	width: 70px;
+    float: right;
+    clear: right;
+    margin-top: 122px;
+    margin-right: 20px;
+}
+.pointer-2{
+	cursor: pointer;
+	height: 130px;
+	width: 70px;
+    float: right;
+    margin-top: 180px;
+    margin-right: 20px;
+    display: none;
+}
+.pointer-3
+{
+	float: right;
+	height: 50px;
+    width: 50px;
+    margin-top: 220px;
+    display: none;
+}
+.pointer-4{
+	float: right;
+	height: 50px;
+    width: 50px;
+    margin-top: 220px;
+    cursor: pointer;
+}
+.pointer-5{
+	cursor: pointer;
+	height: 130px;
+	width: 70px;
+    float: right;
+    margin-top: 180px;
+    margin-right: 20px;
+}
+
+
+.code-1{
+	display: none;
+	top: 125px;
+}
+.code-2{
+	border-bottom: 5px solid #e64c13; 
+	background: rgba(160, 160, 160, 0.21);
+	width: 23.27vw;
+	height: 385px;
+}
+.code-3{
+	width: 23.27vw;
+	height: 195px;
+	background: rgba(0, 0, 0, 0.64);
+	color: white
+}
+.code-4{
+	float: right;
+	margin-right: 2.64vw;
+	animation: code4-dong 2s;
+}
+.code-5{
+	float: right;
+	animation: code5-dong 2s;
+}
+.code-6{
+	display: block;
+	top: 125px;
+}
+@keyframes code4-dong{
+	from{margin-right: -30vw;}
+	to{margin-right: 2.64vw;}
+}
+@keyframes code5-dong{
+	from{margin-right: 2.64vw;}
+	to{margin-right: -30vw;}
+}
+
+
+.process-1{
+	/* position: relative;
+	top: 480px;
+	border-radius: 0px !important; */
+	width: 70vw;
+	margin: 1px auto;
+}
+.click-random{
+	background: #d9513c;
+	color: white;
+	border:0px;
+	height: 46px;
+	width: 132px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-right: 1vw;
+}
+.click-freedom-1{
+	background: #ff8a27;
+	color: white;
+	border:0px;
+	height: 46px;
+	width: 132px;
+	font-size: 21px;
+	border-radius: 4px;
+
+	margin-top: 15px;
+}
+.click-freedom-2{
+	background: #ff8a27;
+	color: white;
+	border:0px;
+	height: 46px;
+	width: 57px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 15px;
+}
+.click-input{
+	height: 47px;
+	width: 250px;
+	background: black;
+	color: white;
+	border: 0px;
+	border-radius: 4px;
+	margin-top: 15px;
+}
+.click-speed{
+	background: #1abc9c;
+	color: white;
+	border:0px;
+	height: 46px;
+	width: 132px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 15px;
+}
+.click-speed-1{
+	color: black;
+	height:46px;
+	width: 300px;
+}
+.click-inputspeed{
+    height: 46px; 
+    background: black; 
+    color: white;
+}
+.click-speed-2{
+	display: inline-block;  
+	margin-right: 20px;
+}
+.click-al{
+	display: inline-block;
+}
+.click-add{
+	color: white;
+	border:0px;
+	height: 46px;
+	padding:10px 0px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-right: 1vw;
+	padding: 10px 20px;
+}
+.click-add1{
+	color: white;
+	border:0px;
+	height: 46px;
+	padding:10px 0px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-right: 1vw;
+	padding: 10px 20px;
+}
+.click-add2{
+	background: rgb(200, 65, 15) !important;
+	color: white;
+	border:0px;
+	height: 46px;
+	padding:10px 0px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-right: 1vw;
+	padding: 10px 20px;
+}
+
+.method{
+	float: right;
+	width: 10vw;
+	margin-right: 40px;
+	cursor: pointer;
+	padding-left: 0;
+	padding-right: 0;
+}
+.method-1{
+	float: right;
+	width: 10vw;
+	margin-right: 40px;
+	display: none;
+	cursor: pointer;
+}
+
+.but{
+	width: 70vw;
+	margin: 10px auto;
+}
+.kaishi{
+	background:#ff4363;
+	color: white;
+	border:0px;
+	height: 46px;
+	width: 132px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-right: 10vw;
+	margin-left: 5vw;
+	margin-top: 20px;
+}
+.jieshu{
+	background: #fc9d99;
+	color: white;
+	border:0px;
+	height: 46px;
+	width: 132px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-right: 10vw;
+	margin-left: 5vw;
+	margin-top: 20px;
+}
+#kaishi{
+    position: absolute;
+    top: 655px;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+#zanting{
+    position: absolute;
+    top: 655px;
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+} 
+
+
+
+}
+
+/* —————————————————————————————————————————————————————————— */
+
+@media (max-width: 768px){
+.doing-1{
+	background: white;
+    height: 350px;
+	/* width: 320px; */
+	margin: 20px auto 0px auto;
+}
+.doing-2{
+	background: white;
+    height: 500px;
+	width: 70vw;
+	margin-top: 100px;
+	margin-bottom: 25px;
+	margin-left: 0.8vw;
+	animation: doing2-dong 2s;
+}
+.doing-3{
+	background: white;
+    height: 500px;
+	/* width: 70vw; */
+	margin: 20px auto 25px auto;
+	animation: doing3-dong 2s;
+}
+@keyframes doing2-dong{
+	from{margin-left: 15vw;}
+	to{margin-left: 0.8vw; }
+}
+@keyframes doing3-dong{
+	from{margin-left: 0.8vw;}
+	to{margin-left: 15vw;}
+}
+
+
+.button-1{
+    
+}
+.button-2{
+	display: inline-block;
+}
+.button-3{
+	
+}
+@keyframes dong{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+
+.img-1{
+	float: right;
+	height: 50px;
+    width: 50px;
+    margin-top: 38px;
+}
+
+
+
+.pointer-1{
+	cursor: pointer;
+	height: 130px;
+	width: 70px;
+    float: right;
+    margin-top: 180px;
+    margin-right: 20px;
+    display: none;
+}
+.pointer-2{
+	cursor: pointer;
+	height: 130px;
+	width: 70px;
+    float: right;
+    margin-top: 180px;
+    margin-right: 20px;
+    display: none;
+}
+.pointer-3
+{
+	float: right;
+	height: 50px;
+    width: 50px;
+    margin-top: 220px;
+    display: none;
+}
+.pointer-4{
+	float: right;
+	height: 50px;
+    width: 50px;
+    margin-top: 220px;
+    cursor: pointer;
+}
+
+
+#code-1{
+	position: relative !important;
+	top:0 !important;
+	left: 0px !important;
+	margin-bottom: 10px !important;
+}
+.code-2{
+	border-bottom: 5px solid #e64c13; 
+	background: rgba(160, 160, 160, 0.21);
+	width: 100%;
+	height: 200px;
+}
+.code-3{
+	width: 100%;
+	height: 100px;
+	background: rgba(0, 0, 0, 0.64);
+	color: white;
+}
+.code-4{
+	float: right;
+	margin-right: 2.64vw;
+	animation: code4-dong 2s;
+}
+.code-5{
+	float: right;
+	animation: code5-dong 2s;
+}
+@keyframes code4-dong{
+	from{margin-right: -30vw;}
+	to{margin-right: 2.64vw;}
+}
+@keyframes code5-dong{
+	from{margin-right: 2.64vw;}
+	to{margin-right: -30vw;}
+}
+
+
+.process-1{
+	/* position: relative;
+	top: 480px;
+	border-radius: 0px !important; */
+	width: 320px;
+	margin: 310px auto 5px auto;
+}
+.click-random{
+	background: #d9513c;
+	color: white;
+	border:0px;
+	height: 43px;
+	width: 92px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-left: 2vw;
+	display: inline-block;
+}
+.click-al{
+	display: inline-block;
+}
+.click-freedom-1{
+	background: #ff8a27;
+	color: white;
+	border:0px;
+	height: 43px;
+	width: 92px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-left: 2vw;
+	display: inline-block;
+}
+.click-freedom-2{
+	background: #ff8a27;
+	color: white;
+	border:0px;
+	height: 46px;
+	width: 57px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.click-input{
+	height: 47px;
+	width: 250px;
+	background: black;
+	color: white;
+	border: 0px;
+	border-radius: 4px;
+	margin-top: 15px;
+}
+.click-speed{
+	background: #1abc9c;
+	color: white;
+	border:0px;
+	height: 43px;
+	width: 100px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-left: 2vw;
+}
+.click-speed-1{
+	color: black;
+	width: 300px;
+	height:46px;
+}
+.click-speed-2{
+	margin-right: 20px;  	
+}
+.click-inputspeed{
+    height: 46px; 
+    background: black; 
+    color: white;
+}
+.click-add{
+	color: white;
+	border:0px;
+	height: 43px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-left: 2vw;
+	padding: 5px 10px;
+}
+.click-add1{
+	color: white;
+	border:0px;
+	height: 43px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-left: 2vw;
+	padding: 5px 10px;
+}
+.click-add2{
+    background: rgb(200, 65, 15) !important;
+	color: white;
+	border:0px;
+	height: 43px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-top: 15px;
+	margin-left: 2vw;
+	padding: 5px 10px;
+}
+.method{
+	margin-top: 122px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px 10px;
+	width:  100px;
+}
+.but{
+	margin-top: 0;
+}
+.kaishi{
+	background:#ff4363;
+	color: white;
+	border:0px;
+	height: 43px;
+	width: 92px;
+	font-size: 21px;
+	border-radius: 4px;
+	margin-left: 5vw;
+	margin-top: 20px;
+}
+.jieshu{
+	background: #fc9d99;
+	color: white;
+	border:0px;
+	height: 43px;
+	width: 92px;
+	font-size: 21px;
+	border-radius: 4px;
+
+	margin-top: 20px;
+}
+#kaishi{
+    position: absolute;
+    top: 482px;
+	height: 50px;
+	width: 50px;
+}
+#zanting{
+    position: absolute;
+    top: 482px;
+	height: 50px;
+	width: 50px;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+}

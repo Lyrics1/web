@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<title>图的DFS</title>
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+<!-- 	<link rel="stylesheet" media="screen" href="assets/css/Opensans.css"> -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/disanceng.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+
+    <style type="text/css">
+    input[type=range] {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background:#f7f5f4;
+    position: relative; 
+    height: 15px;
+}
+    input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}   
+    input[type=range]::-webkit-slider-runnable-track{
+    height: 15px;
+    border-radius: 10px; /*将轨道设为圆角的*/
+    box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; /*轨道内置阴影效果*/
+}
+    input[type=range]:focus {
+    outline: none;
+}
+    input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+    box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+}
+#l li{
+	list-style: none;
+    </style>
+}
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Association of Network and Technology"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="index.html">主页</a></li>
+					<li><a href="http://blog.xiyounet.org">专栏</a></li>
+					<li><a href="http://lib.xiyounet.org">网协图书馆</a></li>
+					<li class="active"><a href="about.html">关于</a></li>
+					<li><a href="contact.html">联系我们</a></li>
+					<!-- <li><a class="btn" href="signin.html">SIGN IN / SIGN UP</a></li> -->
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+
+	<!-- <div class="method" id="method">
+	    <h4>使用方法</h4>
+	    <p>1.点击随机数，自动生成随机数</p>
+	    <p>2.如使用自定义，则最多输入10个数，以逗号分割,点击go，生成自定义数据</p>
+	    <p>3.点击播放按钮开始动态演示</p>
+	</div> -->
+
+	<p class="btn btn-primary btn-lg method" data-toggle="modal" data-target="#myModal" id="method">
+    使用方法
+    </p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+
+    <img src="images/enter.png" id="pointer-2" class="pointer-3">
+
+    <!-- <div  id="code-1" style="position: absolute; left: ; top: 100px;" class="code-1">
+    <div class="code-2"></div>
+    <div class="code-3"></div>
+    </div>
+     -->
+    <div class="pointer-1" id="pointer-1">
+	<p style="width: 20px; height: 130px; color: #2aa0de; float: right;">查看算法代码</p>
+	<img src="images/back.png" class="img-1">
+    </div>
+
+
+    <div id="doing-1" class="doing-1">
+  	<div class="show">
+	
+		<div class="showexe">
+			<svg id="svg" class="svg">
+						
+			</svg>		
+		</div>
+		<div class="result">
+		</div>
+		
+	</div>
+    <!-- <img src="images/3.png" id="kaishi" style="display: block;">
+    <img src="images/4.png" id="zanting" style="display: none;"> -->
+    </div>
+    
+    <div  id="code-1" style="position: absolute; left: ; top: 100px;" class="code-1">
+    <div class="code-2">
+    <div id="l">
+   	   <li>void DFS(int start){</li>
+   	   <li style="padding-left:10px"> visited[start] = 1;</li>
+   	   <li style="padding-left:10px"> for (int i = 1; i <= N; i++) {</li>
+   	   <li style="padding-left:10px">  if (!visited[i] ) </li>
+   	   <li style="padding-left:30px"> DFS(i)</li>
+   	   <li style="padding-left:10px"> }</li>
+   	   <li style="padding-left:10px"> i=QUEUE.pop()</li>
+   	   <li>}</li>
+   	   </div>
+   
+    </div>
+    <div class="code-3">
+    	路径：
+    	<p id="explain"></p>
+    	</br>回退
+    	<p id="return"></p>
+    </div>
+    </div>
+
+    
+    <div class="but">
+
+    <!-- <button class="kaishi">开始</button>
+    <button class="jieshu">结束</button> -->
+    <button class="click-random">随机数</button>
+    
+    <div class="click-al">
+    <button id="tan" class="click-freedom-1">开始节点</button>
+    <div id="chu" class="button-2">
+    <input type="text" name="" value="A" class="click-input">
+    <button class="click-freedom-2">go</button>
+    </div>
+    </div>
+
+    <!-- <div class="click-speed-2">
+    <button class="click-speed">调节速度</button>
+    <input type="range" min="1" max="100" class="click-speed-1">
+    <input type="text" name="" class="click-inputspeed">
+    <button class="click-speed">确定</button>
+    </div> -->
+    <div style="display: inline-block; float: right; margin-right: 20px;"> 
+    <button class="click-speed">调节速度</button>
+    <input type="range"  class="click-speed-1" value="5" style="background: linear-gradient(to right, rgb(5, 156, 250), white 50%, white); ">
+    </div>
+
+    </div>
+    
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">使用说明</h4>
+      </div>
+      <div class="modal-body">
+        <P>1.点击随机数或自定义按钮定义数据然后再点击播放按钮开始动态演示</P>
+        <p>2.自定义按钮只可输入一个字符的数据</p>
+        <p>3.速度调节按钮可以调节动画演示速度，速度为1-100之间</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+    
+
+
+
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<!-- 	<script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script> -->
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<!-- 滑动模块的功能加载 -->
+	<script type="text/javascript" src="assets/js/inputRange.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+	<!--  popover initialization -->
+	<script>
+	$(function () {$('[data-toggle="popover"]').popover()});
+  
+	
+	
+	</script>
+
+	<script type="text/javascript">
+	
+	    var x1=document.getElementById("chu");
+	    var y1=document.getElementById("tan");
+	    var i=1;
+	    y1.onclick=function(){
+	    	if(i==1)
+	    	{
+	    		x1.className="button-3";
+	    		i=2;
+	    	}
+	    	else if(i==2)
+	    	{
+	    		x1.className="button-2"
+	    		i=1;
+	    	}
+	    };
+	</script>
+
+	<script type="text/javascript">
+    var x=document.getElementById("pointer-1");
+    var y=document.getElementById("code-1");
+    var z=document.getElementById("doing-1");
+    var m=document.getElementById("method");
+    var pointer=document.getElementById("pointer-2");
+    var remberwidth;
+    var speed;
+    speed=screen.width/330;
+    remberwidth=screen.width+y.offsetWidth
+    y.style.left=remberwidth+"px";
+
+    function move(){
+    	if((y.offsetLeft-z.offsetWidth-z.offsetLeft)>0)
+    	{
+    		y.style.left=y.offsetLeft-speed+"px";
+    	}
+    	else
+    	{
+    		clearTimeout(t);
+    		pointer.className="pointer-4";
+    		return;
+    	}
+    	var t=setTimeout("move()",15);
+    }
+    function move2(){
+    	if (y.offsetLeft<remberwidth) {
+    		y.style.left=y.offsetLeft+5+"px";
+    	}
+    	else
+    	{
+    		clearTimeout(t1);
+    		y.className="code-1";
+    		x.className="pointer-5";
+    		return;
+    	}
+    	var t1=setTimeout("move2()",15);
+    }
+    x.onclick=function()
+    {
+    	x.className="pointer-2";
+    	y.className="code-6"
+    	z.className="doing-2";
+    	/*pointer.className="pointer-4";
+    	m.className="method-1";*/
+    	m.className="method-1";
+    	t=setTimeout("move()",15);
+/*    	alert(y.offsetLeft);*/
+    }
+    pointer.onclick=function(){
+    	/*x.className="pointer-5";*/
+    	pointer.className="pointer-3";
+    	z.className="doing-3";
+    	t1=setTimeout("move2()",15);
+    	/*var t=setTimeout("y.className='code-1'",2001);*/
+
+    }
+	</script>
+
+<!-- 	<script type="text/javascript">
+    var img1=document.getElementById('kaishi');
+    var img2=document.getElementById('zanting');
+    img1.onclick=function()
+    {
+    	img1.style.display="none";
+    	img2.style.display="block";
+    }
+    img2.onclick=function()
+    {
+    	img1.style.display="block";
+    	img2.style.display="none";
+    }
+</script> -->
+	<script type="text/javascript" src="./assets/js/index.js"></script>
+</body>
+</html>
